@@ -57,8 +57,8 @@
           <div class="border-t border-gray-200 pt-4">
             <dt class="font-medium text-gray-900">Educación</dt>
             <dd class="mt-2 text-sm text-gray-500">
-              Documentación, Cursos de Udemy, Videos YouTube, Oracle academy, Aplicaciones
-              móviles.
+              Documentación, Cursos de Udemy, Videos YouTube, Oracle academy,
+              Aplicaciones móviles.
             </dd>
           </div>
         </dl>
@@ -69,7 +69,6 @@
           alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
           class="rounded-lg bg-gray-100"
         />
-        
       </div>
     </div>
   </div>
