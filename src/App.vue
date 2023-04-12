@@ -1,8 +1,9 @@
 <script setup>
+import Navbar from './components/Navbar.vue';
+import Profile from './components/Profile.vue';
 </script>
 
 <template>
-  <div>
-    <h1 class="text-3xl font-bold underline">hello vue with tailwind</h1>
-  </div>
+  <Navbar/>
+  <Profile/>
 </template>
