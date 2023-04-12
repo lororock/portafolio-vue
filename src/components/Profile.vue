@@ -27,60 +27,49 @@
           <div class="border-t border-gray-200 pt-4">
             <dt class="font-medium text-gray-900">experiencia</dt>
             <dd class="mt-2 text-sm text-gray-500">
-              Desarrollo frontend 1 año con 3 meses, desarrollo backend 3 meses
+              Desarrollo frontend 1 año con 3 meses, desarrollo backend 3 meses.
             </dd>
           </div>
 
           <div class="border-t border-gray-200 pt-4">
             <dt class="font-medium text-gray-900">Proyectos</dt>
             <dd class="mt-2 text-sm text-gray-500">
-              6.25&quot; x 3.55&quot; x 1.15&quot;
+              Gestión de ventas e inventarios, agendamiento de cursos y horarios
+              universitarios.
             </dd>
           </div>
 
           <div class="border-t border-gray-200 pt-4">
-            <dt class="font-medium text-gray-900">Finish</dt>
+            <dt class="font-medium text-gray-900">Tecnologías</dt>
             <dd class="mt-2 text-sm text-gray-500">
-              Hand sanded and finished with natural oil
+              Nuxt/Axios, Vue, Node, Express, TypeScript, React, React Native,
+              MongoDB, Git.
             </dd>
           </div>
 
           <div class="border-t border-gray-200 pt-4">
-            <dt class="font-medium text-gray-900">Includes</dt>
+            <dt class="font-medium text-gray-900">Metodologias agiles</dt>
             <dd class="mt-2 text-sm text-gray-500">
-              Wood card tray and 3 refill packs
+              Scrum con buena comunicación y participación con el equipo.
             </dd>
           </div>
 
           <div class="border-t border-gray-200 pt-4">
-            <dt class="font-medium text-gray-900">Considerations</dt>
+            <dt class="font-medium text-gray-900">Educación</dt>
             <dd class="mt-2 text-sm text-gray-500">
-              Made from natural materials. Grain and color vary with each item.
+              Documentación, Cursos de Udemy, Videos YouTube, Oracle academy, Aplicaciones
+              móviles.
             </dd>
           </div>
         </dl>
       </div>
-      <div class="grid grid-cols-2 grid-rows-2 gap-4 sm:gap-6 lg:gap-8">
+      <div class="grid sm:gap-6 lg:gap-8">
         <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-01.jpg"
+          src="../assets/img/profile.jpeg"
           alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
           class="rounded-lg bg-gray-100"
         />
-        <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-02.jpg"
-          alt="Top down view of walnut card tray with embedded magnets and card groove."
-          class="rounded-lg bg-gray-100"
-        />
-        <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-03.jpg"
-          alt="Side of walnut card tray with card groove and recessed card area."
-          class="rounded-lg bg-gray-100"
-        />
-        <img
-          src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg"
-          alt="Walnut card tray filled with cards and card angled in dedicated groove."
-          class="rounded-lg bg-gray-100"
-        />
+        
       </div>
     </div>
   </div>
