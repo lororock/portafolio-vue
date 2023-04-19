@@ -1,7 +1,10 @@
 <template>
-  <div class="bg-local bg-cover bg-center h-screen">
+  <div class="bg-local">
+
+  
+  <div class="bg-cover contents bg-center h-screen">
     <div
-      class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
+      class=" mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
     >
       <div>
         <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -67,7 +70,7 @@
       <div class="grid sm:gap-6 lg:gap-8 relative z-10">
         <img
           src="../assets/img/profile.jpeg"
-          class="h-auto max-w-lg rounded-lg "
+          class="h-auto rounded-lg "
           alt="image description"
         />
         <div class="flex absolute -bottom-px left-1/2 -ml-48 h-[2px] w-96">
@@ -87,6 +90,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <style>
