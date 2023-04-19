@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-local bg-cover bg-center h-screen">
     <div
       class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
     >
@@ -25,7 +25,7 @@
           </div>
 
           <div class="border-t border-gray-200 pt-4">
-            <dt class="font-medium text-gray-900">experiencia</dt>
+            <dt class="font-medium text-gray-900">Experiencia</dt>
             <dd class="mt-2 text-sm text-gray-500">
               Desarrollo frontend 1 año con 3 meses, desarrollo backend 3 meses.
             </dd>
@@ -63,13 +63,34 @@
           </div>
         </dl>
       </div>
-      <div class="grid sm:gap-6 lg:gap-8">
+
+      <div class="grid sm:gap-6 lg:gap-8 relative z-10">
         <img
           src="../assets/img/profile.jpeg"
-          alt="Walnut card tray with white powder coated steel divider and 3 punchout holes."
-          class="rounded-lg bg-gray-100"
+          class="h-auto max-w-lg rounded-lg "
+          alt="image description"
         />
+        <div class="flex absolute -bottom-px left-1/2 -ml-48 h-[2px] w-96">
+          <div
+            class="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"
+          ></div>
+          <div
+            class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"
+          ></div>
+          <div
+            class="-ml-[100%] w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"
+          ></div>
+          <div
+            class="-ml-[100%] w-full flex-none blur-[1px] [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]"
+          ></div>
+        </div>
       </div>
     </div>
   </div>
 </template>
+
+<style>
+.bg-local {
+  background-image: url("../assets/img/background.png");
+}
+</style>
