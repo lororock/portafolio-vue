@@ -3,13 +3,10 @@
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <header>
         <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
-          Product Collection
+          Portafolio de proyectos
         </h2>
-
-        <p class="mt-4 max-w-md text-gray-500">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque
-          praesentium cumque iure dicta incidunt est ipsam, officia dolor fugit
-          natus?
+        <p class="mt-4 max-w-xl text-gray-500">
+            Aquí en mi portafolio, encontrarás una selección de algunos de mis proyectos más recientes. Cada uno de ellos representa un desafío único que tuve que superar y una oportunidad para demostrar mis habilidades y creatividad. Espero que disfrutes viendo mis proyectos tanto como yo disfruté trabajando en ellos.
         </p>
       </header>
 
