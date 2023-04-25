@@ -28,7 +28,7 @@ export const proyectos = [
     descripcion:
       "Vestibulum tincidunt purus ut justo dapibus, eget sagittis urna ultrices. Sed tincidunt enim a velit finibus, vel scelerisque tortor porttitor.",
     imagen: "src/assets/img/login.png",
-    tecnologias: "Python, Django, PostgreSQL",
+    tecnologias: "Vue, Bootstrap, axios",
     enlace: "https://prueba-tecnica-cristhian.netlify.app",
   },
   {

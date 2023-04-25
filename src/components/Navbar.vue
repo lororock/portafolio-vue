@@ -4,9 +4,11 @@ import { ref } from "vue";
 export default {
   setup() {
     const mostrar = ref(false);
+    const mostrar2 = ref(false);
 
     return {
       mostrar,
+      mostrar2,
     };
   },
 };
@@ -237,7 +239,7 @@ export default {
           >
         </div>
         <div class="border-t border-gray-700 pb-3 pt-4">
-          <div class="flex items-center px-5">
+          <div class="flex items-center px-5" @click="mostrar2 = !mostrar2">
             <div class="flex-shrink-0">
               <img
                 class="h-10 w-10 rounded-full"
@@ -250,7 +252,7 @@ export default {
                 Cristhian Rosas
               </div>
               <div class="text-sm font-medium leading-none text-gray-400">
-                cristhainrosas159@hotmail.com
+                cristhianrosas159@hotmail.com
               </div>
             </div>
             <button
@@ -274,7 +276,7 @@ export default {
               </svg>
             </button>
           </div>
-          <div class="mt-3 space-y-1 px-2">
+          <div class="mt-3 space-y-1 px-2" v-if="mostrar2">
             <a
               href="#"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
