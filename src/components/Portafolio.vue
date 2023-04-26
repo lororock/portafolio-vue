@@ -23,8 +23,8 @@ defineExpose({ proyectos });
 const maxLength = computed(() => proyectos.length);
 </script>
 <template>
-  <section>
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+  <section id="projects">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8" >
       <header>
         <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
           Portafolio de proyectos

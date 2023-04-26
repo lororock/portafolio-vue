@@ -1,5 +1,5 @@
 <template>
-  <footer aria-label="Site Footer" class="bg-white">
+  <footer aria-label="Site Footer" class="bg-white " id="cv">
     <div
       class="max-w-screen-xl px-4 pt-16 pb-8 mx-auto sm:px-6 lg:px-8 lg:pt-18"
     >
