@@ -15,7 +15,7 @@ export default {
 </script>
 
 <template>
-  <div class="min-h-full">
+  <div class="min-h-full ">
     <nav class="bg-gray-800">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -56,7 +56,7 @@ export default {
                 >
 
                 <a
-                  href="#"
+                  href="#footer_contactos"
                   class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
                   >Contactos</a
                 >

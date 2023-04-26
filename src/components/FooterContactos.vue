@@ -1,8 +1,31 @@
+<script>
+import { ref, onMounted } from "vue";
+
+export default {
+  setup() {
+    const horaActual = ref("");
+
+    const actualizarHora = () => {
+      horaActual.value = new Date().toLocaleTimeString([], { hour12: true });
+    };
+
+    onMounted(() => {
+      actualizarHora(); // Actualiza la hora al cargar el componente
+      setInterval(actualizarHora, 60000); // Actualiza la hora cada minuto
+    });
+
+    return {
+      horaActual,
+    };
+  },
+};
+</script>
+
 <template>
-  <footer aria-label="Site Footer" class="bg-white lg:grid lg:grid-cols-5">
+  <footer aria-label="Site Footer" class="bg-white lg:grid lg:grid-cols-5" id="footer_contactos">
     <div class="relative block h-32 lg:col-span-2 lg:h-full">
       <img
-        src="https://images.unsplash.com/photo-1642370324100-324b21fab3a9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+        src="../assets/img/portada.jpeg"
         class="absolute inset-0 object-cover w-full h-full"
       />
     </div>
@@ -14,7 +37,6 @@
             <span class="text-xs tracking-wide text-gray-500 uppercase">
               contacto personal
             </span>
-
             <a
               class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
             >
@@ -23,6 +45,7 @@
           </p>
 
           <ul class="mt-8 space-y-1 text-sm text-gray-700">
+            <li>Disponible para comunicación.</li>
             <li>LUNES A VIERNES: 10am - 5pm</li>
             <li>FIN DE SEMANA: 10am - 3pm</li>
           </ul>
@@ -132,19 +155,19 @@
               <ul class="space-y-4 text-sm">
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Maquetacion web
+                    Maquetación web
                   </a>
                 </li>
 
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Codigo escalable
+                    Código escalable
                   </a>
                 </li>
 
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Creacion de aplicaciones web
+                    Creación de aplicaciones web
                   </a>
                 </li>
 
@@ -156,7 +179,7 @@
 
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Optimisacion de SEO
+                    Optimización de SEO
                   </a>
                 </li>
               </ul>
@@ -209,7 +232,7 @@
 
               <li>
                 <a href="#" class="text-gray-500 transition hover:opacity-75">
-                  {{ new Date().toLocaleTimeString([], { hour12: true }) }}
+                  {{ horaActual }}
                 </a>
               </li>
             </ul>
