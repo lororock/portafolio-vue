@@ -69,7 +69,7 @@
 
       <div class="grid sm:gap-6 lg:gap-8 relative z-10">
         <img
-          src="../assets/img/inventasApp.png"
+          src="../assets/img/login.png"
           class="h-auto rounded-lg "
           alt="image description"
         />
