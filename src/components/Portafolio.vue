@@ -1,5 +1,6 @@
 <script setup>
 import { computed, ref } from "vue";
+import { proyectos } from "../assets/proyectos";
 
 const postXpage = 4;
 const start = ref(0);
@@ -23,7 +24,7 @@ const maxLength = computed(() => proyectos.length);
 </script>
 <template>
   <section id="projects">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8" >
       <header>
         <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
           Portafolio de proyectos
@@ -46,10 +47,7 @@ const maxLength = computed(() => proyectos.length);
       </div>
 
       <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <li
-          v-for="proyecto in proyectos.slice(start, end)"
-          :key="proyecto.nombre"
-        >
+        <li v-for="proyecto in proyectos.slice(start, end)" :key="proyecto.nombre">
           <div class="group block overflow-hidden">
             <img
               :src="proyecto.imagen"
