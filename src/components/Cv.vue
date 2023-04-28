@@ -13,11 +13,11 @@
         </p>
 
         <a
-          href="src/assets/document/cv-Cristhian-Rosas.pdf"
+          href="../assets/document/cv-Cristhian-Rosas.pdf"
           download
           class="inline-block px-12 py-3 mt-8 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500"
         >
-          Descargar CV
+          Descargar mi CV
         </a>
       </div>
     </div>
