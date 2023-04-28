@@ -1,6 +1,7 @@
 <script setup>
 import { computed, ref } from "vue";
 import { proyectos } from "../assets/proyectos";
+import Swal from "sweetalert2";
 
 const postXpage = 4;
 const start = ref(0);
@@ -18,13 +19,31 @@ const prev = () => {
   paginaActual.value = paginaActual.value - 1;
 };
 
+const mostrarPopAds = (pro) => {
+  console.log(pro);
+  Swal.fire({
+    text: pro.descripcion,
+    imageUrl: pro.proyecto,
+    width: 1200,
+    padding: "3em",
+    color: "#716add",
+    background: "#fff url(/images/trees.png)",
+    backdrop: `
+    rgba(0,0,123,0.4)
+    url("/images/nyan-cat.gif")
+    left top
+    no-repeat
+  `,
+  });
+};
+
 defineExpose({ proyectos });
 
 const maxLength = computed(() => proyectos.length);
 </script>
 <template>
   <section id="projects">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8" >
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
       <header>
         <h2 class="text-xl font-bold text-gray-900 sm:text-3xl">
           Portafolio de proyectos
@@ -47,9 +66,10 @@ const maxLength = computed(() => proyectos.length);
       </div>
 
       <ul class="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <li v-for="proyecto in proyectos.slice(start, end)" :key="proyecto.nombre">
+        <li v-for="proyecto in proyectos.slice(start, end)" :key="i">
           <div class="group block overflow-hidden">
             <img
+              @click="mostrarPopAds(proyecto)"
               :src="proyecto.imagen"
               alt=""
               class="h-[350px] w-full object-cover transition duration-500 group-hover:scale-105 sm:h-[450px]"
