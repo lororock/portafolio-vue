@@ -3,7 +3,7 @@ export const proyectos = [
     nombre: "Inventas",
     descripcion:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida velit at massa dignissim suscipit.",
-    imagen: "./assets/img/inventas.png",
+    imagen: "https://lh3.googleusercontent.com/8KJVaEwIvQUfrmLhN1NHERE0cX3GkhcllOVhlRdIxUtbQv9LMciPNvbqeP1yJz8oZ0b0q-sUUYGwMQLa_QZGV6QLeQK5fiaIwdodea-Vvonw5kWjLrjDD7cKm0uCcW04W7Zzz3_e0ABqJcmejU_l6WdGDRJ5tryr2AbpnHz2DxW_hPh9DCosqMSSNNcj-iQ5X-i6hhDGh4Wkg3_jCWbJsyLOAFsnjiJHbFd0nAyyz6j0yFrr4gpsn90ScK_K8SxO1Hcc4iAMnBM_lS3MnE4u27Q8jP74rMz8sV-PJb5gvQil-rldgkgmV-F1vHB5_VW4LXzQHfA-WSmRMC0sQBtd1w4lUMJpfApcq573EfyfwoM8N0mUwyu3REqhaQrAvJNV0UTVSFkMdyvoxBGXVBXNPGw2Irn4nc8hHBxR1DErAWhJ2RaSrnBqDLOOmyhxLsxv51FBXITAZI-BOqwk8oTKjFRtqj4B55rQ7y7cFEbvJbSuQ3Riz97bC1rx3CDpLApjSc-DU_1vGnQhYFh7fPYusy0gpz9qRYBax6B4BzHAMLXGMF8BcuUT4HOAuXyCkjlxMmvNW1-q4_TCoV_mcxsNWapTrrCLN4YOViWFTHxBm-1A5OAyrhidBHmThJCbd_jMehgOBQYiHZ2FqTufM-L8bVJdkHCO7A_SCYbn_x5XbJknn9fpWnpexWvlXaoK_a5mSAWk4_GAqJzlD5CjAw27bbJhjViQ5GBkwCzWHsXbfEpYgLw8Gsc2Zi3CaPd9uMLTVBF7M2vrg9eG9VphDaYAOc224kg0hftI8h7X7h-MVyd3sAHlkCJ9ijEdd_Q-Uy1ys4_v_OnArdMrwHQ6fSStdD3JuW3dbqbzhjonwcB2NwH7xdAwU2_U1-QiVNsldbWguIK1CiwcVO_rs-BMti7-VAhajzJhWNS-8gmlKAC_vXOdPL_Wew=w373-h663-s-no?authuser=0",
     tecnologias: "Vue, Vuetify, Firebase",
     enlace: "https://mercamejor.inventas-app.com/",
   },
@@ -11,7 +11,7 @@ export const proyectos = [
     nombre: "Anterior portafolio",
     descripcion:
       "Vestibulum tincidunt purus ut justo dapibus, eget sagittis urna ultrices. Sed tincidunt enim a velit finibus, vel scelerisque tortor porttitor.",
-    imagen: "./assets/img/oldPortafolio.png",
+    imagen: "https://lh3.googleusercontent.com/_X4A7j-U3MUZwrTEoUYA6kef7NKlOshOs9lCPz-QCUsQgB-GbLpJEsvVyw7bXJpSQVXJXY5QSE2-jnMmAkzQMBvuK8xJ7XuNNCt-1Q9ALtJ7SA_YMOD_JyaFqPnoCtZVPVH-HbWFkGECbCxDXJ2NlodA1xdrcGsUQs5kfghlmQx2DeHw-uaaivlRQkkUFC7rGwrY97fqOEyH7SQk9YueiZXs4xHrXNTsShFiuka7Oiyex1IxiI31K2fW4HBlNdBzlAwEtfev8J0SazN2Yc0b3FBomTzcnfD-cJHUEm0_vzyl4wVX8WkJPQ7dfZ0QZ03wuWCn0fPb_9_BqNyLaF_CMwkhZcDkWCCQRU6Yb9CfxMt9tyB3L_SocY8gW9wfm_Lq5dA6q5KU8HpFeiUI8vwDF7SuUzUEdjuNfya6K00k40_jEYpY4ckZ-niGQ4RLBk2kRPSSNSJW2oM5zPpnKXRSdRZ8BZqkbqk4i0aZxH9R1RTaydCBT7VDkKQsUlKZw3OzO__9FitUyXwirBmLk8i4BBXAg0WOOpXtNqijHeHng1XIycYI8RYi_2k0BwsRDCArcBmeilqR692gAs-DuF5GhBr3Bf8u3aBZGLXRlImjvhweGtRXRKDBuC4uukShPSQnH_g3Gk9KIN5DqLCZA4DugOkmTM-OhjuVZ7KSf0f7ma5kRO81HIYdZYzvAMx_RjL21gtdDfhULQ261ymL3tTVcFY1CkuH5cmJ1sGdiOr67EZFyxv8x3EzFfGyqjSnCTdRDXjVBIn517IHWGM2to8qlRbD1xADyZhDfuOTs4d4MM-34ybbNj2bPoiHok-kzkGr-BoQNxxWE8LphtKp9nR4lS9ELhkoQ9HjWhrfqbqOSu6X49P0HIL1AT1Q1wCK_04n7tIsR68EnTDyAAy15kcZBZZ6DIrLOz4I9jg4TQcjuJPzEkMKcQ=w368-h663-s-no?authuser=0",
     tecnologias: "HTML, CSS, JavaScript",
     enlace: "https://cristhian-rosas.netlify.app/",
   },
@@ -19,7 +19,7 @@ export const proyectos = [
     nombre: "DNA music",
     descripcion:
       "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
-    imagen: "./assets/img/DNA.png",
+    imagen: "https://lh3.googleusercontent.com/3SboxSuaSd-YNHpTZ9MTrUowWapNwqn_4eskhuUTreRvq34KF3AEqRjZD4BnsIV3lbKyRnBVrRdUneSzz3L2W7FA4Tdrm4-I2i6B0ev0a05yPLAZMDs3EcXfzNULGEUcG6OoThQevskdatRtOTVAmUIj634fszJOaGIm27PGxIlQzmBcSRBN71FyDpuRRoMv7RPE-m0uyjV42OKpYqblNVHLpitaAIJaNVNnFo5FazdzTOdRZ_FcqIpOfqPqn6kasL9P6RJINcCatE348itWGSEDkanRe4SIqB6uN1vAvP_zXK277Sd0HYT1iGTITiuA8rwjsbv5-FFYKRMG6rWDHAXvbjF0tB9iYFQoIBaOZq0Ezb-yTdD_mGZvL_e9Th090o1nN-hNX_UKoQLws4jB1s_cvV92LispuShCYtNR2pajtDowgqaTWDFPP4kxE1HwdZEKEyqudNWriYZKTr8YoFAcwMZZ_733lW9omYVeflElJ4kXGnH4Y6Zj-eLQGUa4BnOD3O56eUTznSB9ibViGJ2aiAIpkIhzS8Y1BS6agiHvWzw1onr5urJ3W4PDL9BAnVIUE_5FApp5fPbaJPaTzvFsqMjzoimWdGRhNRLMHuH1bYyovinsgXaoOAJQ1iuGWbd2HP-1WKaMHSfnub0-zua2cRfvDHILAriU96h0UFJvezKGAzjgcPr_zwVVhfdiHc1PXm4ho4WZkSnbjmmIeQyXcHw2Vg3ZXWnU79QvXIT3T66Uq9c8JC4vpURj-ztQdbAvqHf2U2KHHEDoEGkMXvAwEvWuoZb0WM2mbDaaHvpG909JDVJ4DYkv-PKZY5B3CaGojflcMx6F0eEQqcmLYirqoaEBeyOgUgs1S8ZL17UokBBzgPP7XxpV2nfaXojVcfjnyVw5A3oZwiUSTQXLIgwVnc7plBcwODvV60CHp3Ku2qDzfw=w236-h332-s-no?authuser=0",
     tecnologias: "Vue, Bootstrap, Microservicios, axios",
     enlace: "https://dnamusic.com.co/sign-in",
   },
@@ -27,7 +27,7 @@ export const proyectos = [
     nombre: "Gestor Estudiante/Profesor",
     descripcion:
       "Vestibulum tincidunt purus ut justo dapibus, eget sagittis urna ultrices. Sed tincidunt enim a velit finibus, vel scelerisque tortor porttitor.",
-    imagen: "./assets/img/login.png",
+    imagen: "https://lh3.googleusercontent.com/l7kNLQW7Uz-BVYCxENr8MfiZMPVNTR9KMx1jQcC9t1DTSRmDVAbNS7nWJ4e3f5k3Qebli3lZ0ZwQ-63kGQKEf-U6Kf5JoZbJ9Nd-Uai5j8UpdiTY2-RUGk8Oa0MMhro-N37AEKZNgf0aJCLCQ4o-m9xIgnZ9uvxyU567CTaMGgYRtZpp9iWkSjc5s2J6eqXcsrbyIOiiIPdrqJqYjSJFkACK7PXLt5R-VXc7L_2hazET7g5ufiaeahqd3P7GwpaN32sRD0n9qZpwzPl1QeIV_n1bXj4GfFKNnbCqSpCKafAoEuVfPobFbN9b4ajt4KDH2JpJ1gbAb4AGc2ouEswDGz4jZlGTXnffZX0hD4Y7ZEXE9ZJtZSp3z8db8C7GPMsFlV9KCdkCZ6nkYESdWZnB-c7lp0rBeIiEt6o2cz4NaSHdUoJhRGbX9p741OpMHwTsY9yVe2fEaPbXa_zWyvUyio9_yzvIOToVL-e39wgD5NBL-wCSIFldq3ITs4v6lxdOziVUUZN6yFoE2vSaPmtIQsJQdLwlQFN4W5H0rOB_8sEhtPYbXpnYhB4VMW66gHtFGMFRYeaoOoEqxVrXsbf3MeUKb1kNFMWYVeNQM6tRMVF-5rwWGQWJOaJJUeNTK3ytzXrPtl6Qr022TJFBuMbtboIRKCeD9iZBu4KlAL6n7c1LFxrKA2cwynxtw0kReKR0IuhHVxu763p0gQUv3Tz5r6fWezx9i7HEvhRVHl5yyvpxbrnyJG4LhH0bCcQyBVnO-Us-6Bmg_rbQqPf2Joz5ZcU72KOp7pe8rzYZ-VdsjCnZVVhFHBJe_E6m9xJpRsgbAgJYjeAUpz_OymsmU6Y1UjUPiqMmhBIP0KI3li1TXVW2fX8N458esfFYXCdGuizhqQ281fz7if96V8lBrsn-ayWJ45BrALy1O5yunWCrvOG4DnfHMg=w590-h837-s-no?authuser=0",
     tecnologias: "Vue, Bootstrap, axios",
     enlace: "https://prueba-tecnica-cristhian.netlify.app",
   },
@@ -35,7 +35,7 @@ export const proyectos = [
     nombre: "Gestor de gastos",
     descripcion:
       "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
-    imagen: "./assets/img/gastos.png",
+    imagen: "https://lh3.googleusercontent.com/_iwr6zaXkxZ0P3kVjmDiPpBQ-Df63FFtg1kR11X_NvEyUJJc4sI3YXJ9wAteiXHYsQBxKld1qgP6KEaw5p4fi8sXHKssZ4fJm3-q0BSu0lYhgQ5qRr3YRhN2hK3uLoBpiOLypy8MUdNI2VUuIGs194d9lYP-vColPwB12bcQ3uDf2sjHwT782V_zkpXLLdRZGEe1yywimiJvgMUbUi2mSn-PaInoFqA-Z-Wn4kRaWP_KEy-jmrUsDgvfYxTym5PqJsqW9Q5m6mLQZusoqZxGqE3pyN1ZHNtuJ2ISyP0WBdGUl1aVacHZUCHLmaIdoWUEMMvFKor6QuXlXRozKuoUWo45sL7LWUIh-R6PUxnMrKn6WUjevjiXl6BYEzzs3z6t_dMe5ejWE0AyPxkwGKrTJNqSI4mmhwhQ9Q_2rls-jowSY-elK_vQHftdAnezqu4tMdNXffEzEVlVyH6iktYRPZ-fuZI03AjjMAaJh7fM65eT7YD3AgHi4JlGZytRxVRzjySohl5PLJ2hmJGhQ4ULhSSZDN7dosvK-I7aoWDtqEUpmJVETM60aZd42mQqB85zcznyDH8mARTq8FnGl-D283Zfe9Am3oNSx6j5QWISmGi6Qw9U43w6kA7v3qHvU5MCnLP5v9uCP5ZhsYVTs2zegFte8E-szHDBNuD95vcV6CG2RITFD_nZnbU_nsaGohRETM1JmVetpPa1NExoFjcT-IvEiNy1bkPLPkyzvhaxxP5EqVwszbBaRRYWqRDCSRtaSJUqe8GwHqMOElx29NpToSSLCwIZA2qQ2aRkqjrdt5BA5j3ceFsWxpEJQ8jKllHiSPqPtkkEGFHl5kPi5BwK9LgEoouyWLHpfMkn0G2CsVynLJboB5JEglm9eHaF1OBHFmbZ1wuxMPfd6g8V4JoEeGNwJtLbaNokLnW5a8HRAKEhiwMT8w=w695-h864-s-no?authuser=0",
     tecnologias: "HTML, CSS, JavaScript",
     enlace: "https://regal-crepe-84ee70.netlify.app/",
   },
@@ -43,7 +43,7 @@ export const proyectos = [
     nombre: "Api peliculas",
     descripcion:
       "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
-    imagen: "./assets/img/peliculas.png",
+    imagen: "https://lh3.googleusercontent.com/j3pq8RgrE1DQksj2jJf2w8_n0EL7L9LlOREUa4YtzliWpJ0XasVjnd4Xuuy4NNaR8Y3DbYf3OFB1wYBFlncJUWvWvdbl-vTq_6YkfZpgdw3bMzoHlbJe5_I2YkeM6dkJi8bnuxwBfTjuSi6FIbrX8Zvt_YrtYoxUmpLhCnqJEXenZDTlzqSqwooUtCW2i0ssjcLOOZjDd-Bf1QMcUXDXn4Z1aViaUew3bdn-2reXKAIoKtchTpG2wQ6wzGurPmM8qoHfeZxaVWcyKZvdd8qLxIHs5jFfKVGHGvjhDoThp757lkolkwJrga3ZO-Km91yF_6ohTfIdDmlY4QW7QZDq4h0ume2omC58bV641ejVf66M7LL9XMKxP7AeYYzqRN5nYALzJv30-tNFRRVvBMSiJz4CRAOgGA9xtBx5gd_kK1XhkPMYrFfNC5xCIBOLd7BOnXr4CbbRxS9llrUubGiQiMPDGXw-M7EiQfMJlK0bj7AoN5yOy9SquxQiHZsyH0M4PDSvy1vZ50oqirml8mNKCO6Bh6VJXop0SM4Y0sB2pRk7JxNNOSlfaZpy6sOUu99-w6C31BO3MTYy_AgqSLLDNk5WZNac15Teb2Nwk_OMPTZOP1LEobO8PxRkM47dyTZJsAuj-0HMRefVhnVHdwSxA_k3QXh4NIuLmMaiHcfvQwGGcAlWwjf84V2Ai-Ugm7I1Uwi1mCZXLtW_JSiJe7bGlYPGZeG0i-9NOeTh34K_RqMOFMgdblV-PVPzw1B6Sed8g_2k80T0CjuZmFXqjwHFvh0aV7hg04hGcKroaz6EGlbjEiRxpRSJ-wi8BNjc_uAwlX7QfG74wDBp5qvVb396LluMVL0aHGmSa7pYZshDfTMsuNaI91OA_jF7QF86FvdW_JLAyLRGsScNAO9MEqyF_nGgd0F_yR-D7SQSQgUMn8xg0RU0PQ=w695-h827-s-no?authuser=0",
     tecnologias: "HTML, CSS, JavaScript, Api Fetch",
     enlace: "https://jade-seahorse-cb70ae.netlify.app/",
   },
@@ -51,7 +51,7 @@ export const proyectos = [
     nombre: "landing page inventas",
     descripcion:
       "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
-    imagen: "./assets/img/inventasWeb.png",
+    imagen: "https://lh3.googleusercontent.com/I2oftAJqINqllXnfa7j1GZzLtJkK7iSRjDoWGcuPC27rDOVZl2IJ6NxqWmPAkXcnVb-59GmgPHc4jF6nBv7DX_KT8el8YLxIG9wqIulGslKy9KWiCJcdbCA1Z6hrElWh-N7GSECyUertJdnn_kXN2sEt-VNY2UwPzMXFKnyGHp3_yu7mf_djdnuHvgD7wo6ICBRbweiWEiK2H1RiwEdB8bN4o5XvyImYvI717q3gqs0m9tAjwHE6oYKNMdPGsYglJ5Lmt69OvCyTjglYPyLtUvKzGaowXjVfwPM7VumH6C096pSSTcVJBsI2WWM9R6egrFH461hDhfobBNa6qQ9QbpjZNzzX2lJ9adoRGNvGysOLIWjpRzYr5XZjzj_iW7H95oCsR40kpcQ4h7KrEnirwGZlBSW26MTD_FDYjIUDfaMIkmsIg3sa_DiGl51SSD23iPjFHTvfRKKUPUyX1s91PcZmPYOn2WAU4d_Ne8iZPX2CV2OmnFcyUTIgTBminwfsZ1cqMLOPzPvZJcGest_R-KtICV7gHwVook6kLrH5Xa26K5xxLchQZibXF-XsRnxMxN7JXH1GV_wgVeKEWSyyww9bpnuq6xbWm9KFHFPfuGcbwmn9YYh8WcAmXqUycoRNBl1vShiqO9BBZEOzCsr_xPi0_AfJc0N7nLLTNaAj5g5nT39IGA6b_WDnPpWigvjAdTBJfa5B-ZZ4XOBWvncLcyvNb6A1vqzf7RVACg27MlXDxkpeMBhrE1eaWqjCKJfA-yiwjXyPWB73JqhSyWs6ib6E37RUtLlmzxZQwbs72twJt22bem2b4ywFWSNwY6nqTpTRU6FWNn6dh9iNRIfy4FTctHlY2IuUf04z64_jdCiTyeuTSO8eaEd-AcdcIgUqE99Egp_TWZIFVBOlaPW89WAFE-mZ-SDjE60XQk3Z__4czaWO3g=w368-h659-s-no?authuser=0",
     tecnologias: "HTML, Bootstrap, JavaScript",
     enlace: "https://inventas-app.com/",
   },
