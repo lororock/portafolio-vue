@@ -4,7 +4,7 @@ import dna from "../assets/img/principal/DNA.png";
 import estudianteProfesor from "../assets/img/principal/login.png";
 import presupuesto from "../assets/img/principal/gastos.png";
 import peliculas from "../assets/img/principal/peliculas.png";
-import landing from "../assets/img/principal/inventasweb.png";
+import landing from "../assets/img/principal/landing.png";
 
 import fullInventas from "../assets/img/fullscreen/inventas.png";
 import fullPortafolio from "../assets/img/fullscreen/portafolio.png";
@@ -12,7 +12,7 @@ import fullDna from "../assets/img/fullscreen/DNA.png";
 import fullEstudianteProfesor from "../assets/img/fullscreen/prueba.png";
 import fullPresupuesto from "../assets/img/fullscreen/gastos.png";
 import fullPeliculas from "../assets/img/fullscreen/peliculas.png";
-import fullLanding from "../assets/img/fullscreen/inventasweb.png";
+import fullLanding from "../assets/img/fullscreen/landing.png";
 
 export const proyectos = [
   {
