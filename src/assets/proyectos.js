@@ -18,7 +18,7 @@ export const proyectos = [
   {
     nombre: "Inventas",
     descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla gravida velit at massa dignissim suscipit.",
+      "sistema de gestión integral para un negocio de productos o servicios, que incluye control de inventarios, ventas y gestión de empleados.",
     imagen: inventas,
     proyecto: fullInventas,
     tecnologias: "Vue, Vuetify, Firebase",
@@ -27,7 +27,7 @@ export const proyectos = [
   {
     nombre: "Anterior portafolio",
     descripcion:
-      "Vestibulum tincidunt purus ut justo dapibus, eget sagittis urna ultrices. Sed tincidunt enim a velit finibus, vel scelerisque tortor porttitor.",
+      "antiguo portafolio de presentación de mis proyectos y habilidades",
     imagen: portafolio,
     proyecto: fullPortafolio,
     tecnologias: "HTML, CSS, JavaScript",
@@ -36,7 +36,7 @@ export const proyectos = [
   {
     nombre: "DNA music",
     descripcion:
-      "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
+      "Sistema de gestión de prácticas para estudiantes, revisión de materias inscritas y administración de horarios. En la parte de administración, se incluye la creación de horarios de agendamiento. En la parte de profesores, se permite la revisión de asistencias a las prácticas inscritas.",
     imagen: dna,
     proyecto: fullDna,
     tecnologias: "Vue, Bootstrap, Microservicios, axios",
@@ -45,7 +45,7 @@ export const proyectos = [
   {
     nombre: "Gestor Estudiante/Profesor",
     descripcion:
-      "Vestibulum tincidunt purus ut justo dapibus, eget sagittis urna ultrices. Sed tincidunt enim a velit finibus, vel scelerisque tortor porttitor.",
+      "Inicio de sesión y registro que gestionan a dos tipos de usuarios, cada uno con su propia interfaz y funcionalidades personalizadas, según su rol en el sistema. Lamentablemente, el backend se encuentra temporalmente fuera de servicio.",
     imagen: estudianteProfesor,
     proyecto: fullEstudianteProfesor,
     tecnologias: "Vue, Bootstrap, axios",
@@ -54,7 +54,7 @@ export const proyectos = [
   {
     nombre: "Gestor de gastos",
     descripcion:
-      "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
+      "Sistema de cálculo de presupuesto que genera un análisis basado en los ingresos y egresos, proporcionando el total de ambos.",
     imagen: presupuesto,
     proyecto: fullPresupuesto,
     tecnologias: "HTML, CSS, JavaScript",
@@ -63,7 +63,7 @@ export const proyectos = [
   {
     nombre: "Api peliculas",
     descripcion:
-      "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
+      "Consumo de API para la creación de una página que muestra las últimas películas con su nombre y portada. Además, incluye paginación para navegar hasta películas más antiguas.",
     imagen: peliculas,
     proyecto: fullPeliculas,
     tecnologias: "HTML, CSS, JavaScript, Api Fetch",
@@ -72,7 +72,7 @@ export const proyectos = [
   {
     nombre: "landing page inventas",
     descripcion:
-      "Pellentesque auctor, sapien sit amet euismod rhoncus, eros nunc faucibus mi, in maximus ex sapien at nisi.",
+      "Mi primera página web empresarial para mostrar un equipo de desarrollo y sus servicios, con información de contacto y presentación de los integrantes del equipo.",
     imagen: landing,
     proyecto: fullLanding,
     tecnologias: "HTML, Bootstrap, JavaScript",
