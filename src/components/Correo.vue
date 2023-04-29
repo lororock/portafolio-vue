@@ -1,5 +1,12 @@
 <script setup>
-import { defineProps, defineEmits } from "vue";
+import { ref, defineProps, defineEmits } from "vue";
+import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
+
+emailjs.init("SAIQQNv6oRUCEAad2");
+
+const name = ref("");
+const email = ref("");
 
 const props = defineProps({
   visualizar: {
@@ -12,7 +19,41 @@ const emit = defineEmits(["actualizarVisualizar"]);
 
 const actualizarVisualizar = (valor) => {
   emit("actualizarVisualizar", valor);
-  console.log("click", valor);
+};
+
+const enviarCorreo = () => {
+  const templateParams = {
+    from_name: name.value,
+    from_email: email.value,
+  };
+
+  emailjs
+    .send("service_yyidnyt", "template_16few9i", templateParams)
+    .then((response) => {
+      console.log(
+        "Correo electrónico enviado:",
+        response.status,
+        response.text
+      );
+      actualizarVisualizar();
+      Swal.fire({
+        position: "top-end",
+        icon: "success",
+        title: "Correo enviado",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    })
+    .catch((error) => {
+      console.error("Error al enviar el correo electrónico:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Error al enviar el correo electrónico",
+        showConfirmButton: false,
+        timer: 1500,
+      });
+    });
 };
 </script>
 
@@ -58,7 +99,11 @@ const actualizarVisualizar = (valor) => {
               </div>
 
               <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                <form class="space-y-6" action="#" method="POST">
+                <form
+                  class="space-y-6"
+                  method="POST"
+                  @submit.prevent="enviarCorreo"
+                >
                   <div>
                     <div class="flex items-center justify-between">
                       <label
@@ -69,12 +114,12 @@ const actualizarVisualizar = (valor) => {
                     </div>
                     <div class="mt-2">
                       <input
-                        id="name"
+                        v-model="name"
                         name="name"
                         type="text"
-                        autocomplete="current-name"
+                        autocomplete="name"
                         required
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        class="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
                   </div>
@@ -87,12 +132,12 @@ const actualizarVisualizar = (valor) => {
                     >
                     <div class="mt-2">
                       <input
-                        id="email"
+                        v-model="email"
                         name="email"
                         type="email"
                         autocomplete="email"
                         required
-                        class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                        class="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                       />
                     </div>
                   </div>
@@ -105,7 +150,7 @@ const actualizarVisualizar = (valor) => {
                     </button>
 
                     <button
-                      type="button"
+                      type="submit"
                       class="flex justify-center items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     >
                       ENVIAR
