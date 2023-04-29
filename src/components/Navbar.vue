@@ -1,16 +1,21 @@
-<script>
-import { ref } from "vue";
+<script setup>
+import { ref, defineProps, defineEmits } from "vue";
 
-export default {
-  setup() {
-    const mostrar = ref(false);
-    const mostrar2 = ref(false);
+const mostrar = ref(false);
+const mostrar2 = ref(false);
 
-    return {
-      mostrar,
-      mostrar2,
-    };
+const props = defineProps({
+  visualizar: {
+    type: Boolean,
+    required: true,
   },
+});
+
+const emit = defineEmits(["actualizarVisualizar2"]);
+
+const actualizarVisualizar2 = (valor) => {
+  emit("actualizarVisualizar2", valor);
+  console.log("click", valor);
 };
 </script>
 
@@ -61,7 +66,7 @@ export default {
             <div class="hidden md:block">
               <div class="ml-4 flex items-center md:ml-6">
                 <button
-                  type="button"
+                  @click="actualizarVisualizar2(true)"
                   class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                 >
                   <span class="sr-only">View notifications</span>
@@ -122,7 +127,6 @@ export default {
                   >
                     <!-- Active: "bg-gray-100", Not Active: "" -->
                     <a
-                      href="#"
                       class="block px-4 py-2 text-sm text-gray-700"
                       role="menuitem"
                       tabindex="-1"
@@ -227,15 +231,15 @@ export default {
             >
           </div>
           <div class="border-t border-gray-700 pb-3 pt-4">
-            <div class="flex items-center px-5" @click="mostrar2 = !mostrar2">
-              <div class="flex-shrink-0">
+            <div class="flex items-center px-5">
+              <div class="flex-shrink-0" @click="mostrar2 = !mostrar2">
                 <img
                   class="h-10 w-10 rounded-full"
                   src="../assets/img/profile.jpeg"
                   alt=""
                 />
               </div>
-              <div class="ml-3">
+              <div class="ml-3" @click="mostrar2 = !mostrar2">
                 <div class="text-base font-medium leading-none text-white pb-1">
                   Cristhian Rosas
                 </div>
@@ -244,7 +248,7 @@ export default {
                 </div>
               </div>
               <button
-                type="button"
+                @click="actualizarVisualizar2(true)"
                 class="ml-auto flex-shrink-0 rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               >
                 <span class="sr-only">View notifications</span>
