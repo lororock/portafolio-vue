@@ -98,7 +98,7 @@ const actualizarVisualizar2 = (valor) => {
                       <span class="sr-only">Open user menu</span>
                       <img
                         class="h-8 w-8 rounded-full"
-                        src="../assets/img/profile.jpeg"
+                        src="../assets/img/profile.webp"
                         alt=""
                       />
                     </button>
@@ -233,7 +233,7 @@ const actualizarVisualizar2 = (valor) => {
               <div class="flex-shrink-0" @click="mostrar2 = !mostrar2">
                 <img
                   class="h-10 w-10 rounded-full"
-                  src="../assets/img/profile.jpeg"
+                  src="../assets/img/profile.webp"
                   alt=""
                 />
               </div>

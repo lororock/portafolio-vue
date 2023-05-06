@@ -77,7 +77,7 @@ const maxLength = computed(() => proyectos.length);
 
             <div class="relative bg-white pt-3">
               <a
-                class="text-xs text-gray-700 group-hover:underline group-hover:underline-offset-4"
+                class="text-x font-semibold text-gray-700 group-hover:underline group-hover:underline-offset-4"
                 target="_blank"
                 :href="proyecto.enlace"
               >

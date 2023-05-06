@@ -25,7 +25,7 @@ export default {
   <footer aria-label="Site Footer" class="bg-white lg:grid lg:grid-cols-5" id="footer_contactos">
     <div class="relative block h-32 lg:col-span-2 lg:h-full">
       <img
-        src="../assets/img/portada.jpeg"
+        src="../assets/img/portada.webp"
         class="absolute inset-0 object-cover w-full h-full"
       />
     </div>

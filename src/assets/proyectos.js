@@ -1,18 +1,18 @@
-import inventas from "../assets/img/principal/inventas.png";
-import portafolio from "../assets/img/principal/oldportafolio.png";
-import dna from "../assets/img/principal/DNA.png";
-import estudianteProfesor from "../assets/img/principal/login.png";
-import presupuesto from "../assets/img/principal/gastos.png";
-import peliculas from "../assets/img/principal/peliculas.png";
-import landing from "../assets/img/principal/landing.png";
+import inventas from "../assets/img/principal/inventas.webp";
+import portafolio from "../assets/img/principal/oldportafolio.webp";
+import dna from "../assets/img/principal/DNA.webp";
+import estudianteProfesor from "../assets/img/principal/login.webp";
+import presupuesto from "../assets/img/principal/gastos.webp";
+import peliculas from "../assets/img/principal/peliculas.webp";
+import landing from "../assets/img/principal/landing.webp";
 
-import fullInventas from "../assets/img/fullscreen/inventas.png";
-import fullPortafolio from "../assets/img/fullscreen/portafolio.png";
-import fullDna from "../assets/img/fullscreen/DNA.png";
-import fullEstudianteProfesor from "../assets/img/fullscreen/prueba.png";
-import fullPresupuesto from "../assets/img/fullscreen/gastos.png";
-import fullPeliculas from "../assets/img/fullscreen/peliculas.png";
-import fullLanding from "../assets/img/fullscreen/landing.png";
+import fullInventas from "../assets/img/fullscreen/inventas.webp";
+import fullPortafolio from "../assets/img/fullscreen/portafolio.webp";
+import fullDna from "../assets/img/fullscreen/DNA.webp";
+import fullEstudianteProfesor from "../assets/img/fullscreen/prueba.webp";
+import fullPresupuesto from "../assets/img/fullscreen/gastos.webp";
+import fullPeliculas from "../assets/img/fullscreen/peliculas.webp";
+import fullLanding from "../assets/img/fullscreen/landing.webp";
 
 export const proyectos = [
   {
@@ -70,7 +70,7 @@ export const proyectos = [
     enlace: "https://jade-seahorse-cb70ae.netlify.app/",
   },
   {
-    nombre: "landing page inventas",
+    nombre: "Landing page inventas",
     descripcion:
       "Mi primera página web empresarial para mostrar un equipo de desarrollo y sus servicios, con información de contacto y presentación de los integrantes del equipo.",
     imagen: landing,

@@ -43,7 +43,7 @@
             <div class="border-t border-gray-200 pt-4">
               <dt class="font-medium text-gray-900">Tecnologías</dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Nuxt/Axios, Vue, Node, Express, TypeScript, React, React Native,
+                Nuxt/Axios, Vue, Node, Express, TypeScript, React, Firebase,
                 MongoDB, Git.
               </dd>
             </div>
@@ -67,7 +67,7 @@
 
         <div class="grid sm:gap-6 lg:gap-8 relative z-2">
           <img
-            src="../assets/img/codigo.png"
+            src="../assets/img/codigo.webp"
             class="h-auto rounded-lg"
             alt="image description"
           />
@@ -93,6 +93,6 @@
 
 <style>
 .bg-local {
-  background-image: url("../assets/img/background.png");
+  background-image: url("../assets/img/background.webp");
 }
 </style>
