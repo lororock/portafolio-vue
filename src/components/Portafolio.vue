@@ -59,7 +59,7 @@ const maxLength = computed(() => proyectos.length);
 
       <div class="mt-8">
         <p class="text-sm text-gray-500">
-          mostrando
+          proyectos
           <span> {{ end > proyectos.length ? proyectos.length : end }} </span>
           de {{ proyectos.length }}
         </p>
