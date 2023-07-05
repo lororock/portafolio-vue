@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineProps, defineEmits } from "vue";
+import { ref, defineEmits } from "vue";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 

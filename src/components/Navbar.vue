@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineProps, defineEmits } from "vue";
+import { ref, defineEmits } from "vue";
 
 const mostrar = ref(false);
 const mostrar2 = ref(false);
