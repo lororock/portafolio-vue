@@ -5,6 +5,7 @@ import estudianteProfesor from "../assets/img/principal/login.webp";
 import presupuesto from "../assets/img/principal/gastos.webp";
 import peliculas from "../assets/img/principal/peliculas.webp";
 import landing from "../assets/img/principal/landing.webp";
+import Aythen from "../assets/img/principal/Aythen.webp";
 
 import fullInventas from "../assets/img/fullscreen/inventas.webp";
 import fullPortafolio from "../assets/img/fullscreen/portafolio.webp";
@@ -13,6 +14,8 @@ import fullEstudianteProfesor from "../assets/img/fullscreen/prueba.webp";
 import fullPresupuesto from "../assets/img/fullscreen/gastos.webp";
 import fullPeliculas from "../assets/img/fullscreen/peliculas.webp";
 import fullLanding from "../assets/img/fullscreen/landing.webp";
+import fullAythen from "../assets/img/fullscreen/Aythen.webp";
+
 
 export const proyectos = [
   {
@@ -41,6 +44,15 @@ export const proyectos = [
     proyecto: fullDna,
     tecnologias: "Vue, Bootstrap, Microservicios, axios",
     enlace: "https://dnamusic.com.co/sign-in",
+  },
+  {
+    nombre: "Aythen",
+    descripcion:
+      "La aplicación que estoy desarrollando es una herramienta para crear plantillas de forma dinámica y generar código en HTML, Angular, React, Vue y Uidl. Esta aplicación está basada en otra plataforma llamada 'Teleporthq'. Los usuarios podrán crear plantillas personalizadas según sus necesidades, y luego obtener el código correspondiente en los diferentes formatos admitidos. Esto les permitirá ahorrar tiempo y esfuerzo al generar código repetitivo en múltiples frameworks.",
+    imagen: Aythen,
+    proyecto: fullAythen,
+    tecnologias: "React, Redux, AWS Cloud9",
+    enlace: "https://aythen.com/",
   },
   {
     nombre: "Gestor Estudiante/Profesor",
