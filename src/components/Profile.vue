@@ -27,7 +27,7 @@
             <div class="border-t border-gray-200 pt-4">
               <dt class="font-medium text-gray-900">Experiencia</dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Desarrollo frontend 1 año con 3 meses, desarrollo backend 3
+                Desarrollo frontend 1 año con 6 meses, desarrollo backend 3
                 meses.
               </dd>
             </div>
