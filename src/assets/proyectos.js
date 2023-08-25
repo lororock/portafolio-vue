@@ -6,6 +6,7 @@ import presupuesto from "../assets/img/principal/gastos.webp";
 import peliculas from "../assets/img/principal/peliculas.webp";
 import landing from "../assets/img/principal/landing.webp";
 import Aythen from "../assets/img/principal/Aythen.webp";
+import EnLinea from "../assets/img/principal/tres-en-linea.webp"
 
 import fullInventas from "../assets/img/fullscreen/inventas.webp";
 import fullPortafolio from "../assets/img/fullscreen/portafolio.webp";
@@ -15,6 +16,7 @@ import fullPresupuesto from "../assets/img/fullscreen/gastos.webp";
 import fullPeliculas from "../assets/img/fullscreen/peliculas.webp";
 import fullLanding from "../assets/img/fullscreen/landing.webp";
 import fullAythen from "../assets/img/fullscreen/Aythen.webp";
+import fullTresEnLinea from "../assets/img/fullscreen/linea.webp"
 
 
 export const proyectos = [
@@ -62,6 +64,15 @@ export const proyectos = [
     proyecto: fullEstudianteProfesor,
     tecnologias: "Vue, Bootstrap, axios",
     enlace: "https://prueba-tecnica-cristhian.netlify.app",
+  },
+  {
+    nombre: "Tres En Linea",
+    descripcion:
+      "Es una implementación digital del clásico juego de estrategia en el que dos jugadores compiten para lograr una línea de tres símbolos iguales en un tablero de 3x3. Esta versión digital se desarrollará utilizando tecnologías web modernas y estará diseñada para proporcionar una experiencia de juego interactiva y atractiva.",
+    imagen: EnLinea,
+    proyecto: fullTresEnLinea,
+    tecnologias: "React, Bootstrap, Sweetalert2",
+    enlace: "https://phenomenal-bunny-tres-en-linea.netlify.app/",
   },
   {
     nombre: "Gestor de gastos",
