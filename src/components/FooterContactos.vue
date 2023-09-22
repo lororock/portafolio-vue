@@ -46,8 +46,8 @@ export default {
 
           <ul class="mt-8 space-y-1 text-sm text-gray-700">
             <li>Disponible para comunicación.</li>
-            <li>LUNES A VIERNES: 10am - 5pm</li>
-            <li>FIN DE SEMANA: 10am - 3pm</li>
+            <li>LUNES A VIERNES: 7:00 am - 5:00 pm</li>
+            <li>FIN DE SEMANA: 7:00 am - 3:00 pm</li>
           </ul>
 
           <ul class="flex gap-6 mt-8">

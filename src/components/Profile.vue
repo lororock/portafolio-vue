@@ -5,11 +5,11 @@
         class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8"
       >
         <div>
-          <h2
+          <h1
             class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
           >
             Cristhian Rosas
-          </h2>
+          </h1>
           <p class="mt-4 text-gray-500">
             ¡Saludos! Soy un Desarrollador Fullstack apasionado por crear experiencias digitales excepcionales. Mi misión es impulsar la innovación y colaborar con empresas para alcanzar sus metas en el mundo digital. A través de mi experiencia en el Desarrollo Web, me enfoco en diseñar y desarrollar soluciones únicas y eficientes que brinden un valor significativo a los usuarios y ayuden a las empresas a destacarse en el mercado. Estoy comprometido con la excelencia y siempre busco oportunidades para aprender y crecer en este emocionante campo del desarrollo tecnológico.
           </p>
@@ -27,7 +27,7 @@
             <div class="border-t border-gray-200 pt-4">
               <dt class="font-medium text-gray-900">Experiencia</dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Desarrollo frontend 1 año con 6 meses, desarrollo backend 3
+                Desarrollo frontend 2 años, desarrollo backend 5
                 meses.
               </dd>
             </div>
