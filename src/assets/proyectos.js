@@ -8,6 +8,7 @@ import landing from "../assets/img/principal/landing.webp";
 import aythen from "../assets/img/principal/Aythen.webp";
 import enLinea from "../assets/img/principal/tres-en-linea.webp";
 import doubleVpartners from "../assets/img/principal/double-v-partners-prueba-tecnica.webp";
+import dermocapilar from "../assets/img/principal/dermocapilar.webp";
 
 import fullInventas from "../assets/img/fullscreen/inventas.webp";
 import fullPortafolio from "../assets/img/fullscreen/portafolio.webp";
@@ -19,6 +20,7 @@ import fullLanding from "../assets/img/fullscreen/landing.webp";
 import fullAythen from "../assets/img/fullscreen/Aythen.webp";
 import fullTresEnLinea from "../assets/img/fullscreen/linea.webp";
 import fullDoubleVpartners from "../assets/img/fullscreen/double-v-partners-prueba-tecnica.webp";
+import fullDermocapilar from "../assets/img/fullscreen/dermocapilar.webp";
 
 export const proyectos = [
   {
@@ -31,13 +33,13 @@ export const proyectos = [
     enlace: "https://mercamejor.inventas-app.com",
   },
   {
-    nombre: "Anterior portafolio",
+    nombre: "Dermocapilar",
     descripcion:
-      "antiguo portafolio de presentación de mis proyectos y habilidades",
-    imagen: portafolio,
-    proyecto: fullPortafolio,
-    tecnologias: "HTML, CSS, JavaScript",
-    enlace: "https://cristhian-rosas.netlify.app",
+      "proyecto freelance para una empresa que necesitaba un ecommerce",
+    imagen: dermocapilar,
+    proyecto: fullDermocapilar,
+    tecnologias: "React, Redux, Tailwind, axios",
+    enlace: "https://dermocapilar.com.co",
   },
   {
     nombre: "DNA music",
@@ -57,7 +59,15 @@ export const proyectos = [
     tecnologias: "React, Redux, AWS Cloud9",
     enlace: "https://aythen.com",
   },
-
+  {
+    nombre: "Anterior portafolio",
+    descripcion:
+      "antiguo portafolio de presentación de mis proyectos y habilidades",
+    imagen: portafolio,
+    proyecto: fullPortafolio,
+    tecnologias: "HTML, CSS, JavaScript",
+    enlace: "https://cristhian-rosas.netlify.app",
+  },
   {
     nombre: "Gestor Estudiante/Profesor",
     descripcion:
