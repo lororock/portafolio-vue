@@ -48,7 +48,7 @@ export const proyectos = [
     imagen: dna,
     proyecto: fullDna,
     tecnologias: "Vue, Bootstrap, Microservicios, axios",
-    enlace: "https://dnamusic.com.co/user/login",
+    enlace: "https://dnamusic.edu.co/portal-estudiantes/",
   },
   {
     nombre: "Aythen",
