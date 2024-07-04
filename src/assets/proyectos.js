@@ -30,7 +30,7 @@ export const proyectos = [
     imagen: inventas,
     proyecto: fullInventas,
     tecnologias: "Vue, Vuetify, Firebase",
-    enlace: "https://mercamejor.inventas-app.com",
+    enlace: "https://inventas-app.web.app/inicioSesion",
   },
   {
     nombre: "Dermocapilar",
@@ -48,7 +48,7 @@ export const proyectos = [
     imagen: dna,
     proyecto: fullDna,
     tecnologias: "Vue, Bootstrap, Microservicios, axios",
-    enlace: "https://dnamusic.edu.co/portal-estudiantes",
+    enlace: "https://dnamusic.com.co/user/login",
   },
   {
     nombre: "Aythen",
