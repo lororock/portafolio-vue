@@ -8,7 +8,7 @@
             Cristhian Rosas
           </h1>
           <p class="mt-4 text-gray-500">
-            ¡Saludos! Soy un Desarrollador Fullstack apasionado por crear experiencias digitales excepcionales. Mi misión
+            ¡Saludos! Soy un Desarrollador de Software apasionado por crear experiencias digitales excepcionales. Mi misión
             es impulsar la innovación y colaborar con empresas para alcanzar sus metas en el mundo digital. A través de mi
             experiencia en el Desarrollo Web, me enfoco en diseñar y desarrollar soluciones únicas y eficientes que
             brinden un valor significativo a los usuarios y ayuden a las empresas a destacarse en el mercado. Estoy

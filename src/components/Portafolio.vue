@@ -91,8 +91,8 @@ const modules = ref([Navigation, Pagination, Scrollbar]);
       </header>
 
       <div class="mt-8 mb-24">
-        <swiper class="bg-white rounded-lg border border-gray-200 shadow-lg p-4" :modules="modules" :slides-per-view="1"
-          :space-between="50" navigation :pagination="{ clickable: true }" @swiper="onSwiper"
+        <swiper class="bg-slate-200 rounded-lg border border-gray-200 shadow-lg p-4" :modules="modules" :slides-per-view="1" 
+          :space-between="50" navigation :pagination="{ dynamicBullets: true }" @swiper="onSwiper"
           @slideChange="onSlideChange">
           <swiper-slide v-for="(pro, index) in proyectos" :key="index">
             <div @click="mostrarPopAds(pro)">
