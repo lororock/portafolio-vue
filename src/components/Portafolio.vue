@@ -9,8 +9,11 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
+const tecnologis = ref([])
+
 const mostrarPopAds = (pro) => {
   console.log("el prop", pro);
+  tecnologis.value = pro
   Swal.fire({
     title: pro.descripcion,
     imageUrl: pro.proyecto,

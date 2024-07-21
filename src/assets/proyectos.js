@@ -18,7 +18,7 @@ export const proyectos = [
   {
     nombre: "Inventas",
     descripcion:
-      "sistema de gestión integral para un negocio de productos o servicios, que incluye control de inventarios, ventas y gestión de empleados.",
+      "Sistema de gestión integral para negocios de productos o servicios, que abarca el control de inventarios, el seguimiento de ventas y la gestión eficiente de empleados. Esta solución permite optimizar operaciones diarias y mejorar la administración del negocio.",
     imagen: inventas,
     proyecto: fullInventas,
     tecnologias: "Vue, Vuetify, Firebase",
@@ -27,7 +27,7 @@ export const proyectos = [
   {
     nombre: "Dermocapilar",
     descripcion:
-      "proyecto freelance para una empresa que necesitaba un ecommerce",
+      "Me encargué del desarrollo de la tienda en línea, implementando un carrito de compras intuitivo y una pasarela de pagos segura. También diseñé y desarrollé la sección de información para facilitar el acceso a detalles sobre productos, políticas de envío y contacto con la empresa.",
     imagen: dermocapilar,
     proyecto: fullDermocapilar,
     tecnologias: "React, Redux, Tailwind, axios",
@@ -58,7 +58,7 @@ export const proyectos = [
     imagen: portafolio,
     proyecto: fullPortafolio,
     tecnologias: "HTML, CSS, JavaScript",
-    enlace: "https://cristhian-rosas.netlify.app",
+    enlace: "https://cristhian.netlify.app",
   },
   {
     nombre: "Api peliculas",
