@@ -49,8 +49,8 @@ export const proyectos = [
     imagen: dermocapilar,
     proyecto: fullDermocapilar,
     tecnologias: {
-      tecnologia: [vue, tailwind, node],
-      nombreTecno: ["VueJs", "Tailwind", "Nodejs"],
+      tecnologia: [react, tailwind, node],
+      nombreTecno: ["ReactJs", "Tailwind", "Nodejs"],
     },
     enlace: "https://dermocapilar.com.co",
   },
