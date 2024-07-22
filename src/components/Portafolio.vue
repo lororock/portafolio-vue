@@ -9,11 +9,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
-const tecnologis = ref([])
+const tecnologis = ref([0])
 
 const mostrarPopAds = (pro) => {
-  console.log("el prop", pro);
-  tecnologis.value = pro
   Swal.fire({
     title: pro.descripcion,
     imageUrl: pro.proyecto,
@@ -41,8 +39,9 @@ const mostrarPopAds = (pro) => {
 const onSwiper = (swiper) => {
   console.log(swiper);
 };
-const onSlideChange = () => {
-  console.log('slide change');
+const onSlideChange = (i) => {
+  console.log('slide change', i.activeIndex);
+  tecnologis.value = i.activeIndex
 };
 const modules = ref([Navigation, Pagination, Scrollbar]);
 
@@ -74,10 +73,18 @@ defineExpose({ proyectos });
           @slideChange="onSlideChange">
           <swiper-slide v-for="(pro, index) in proyectos" :key="index">
             <div @click="mostrarPopAds(pro)">
-              <img class="mh-full" :src="pro.imagen" :alt="pro.descripcion" />
+              <img class="mh-full" @change="onSlideChange(pro.index)" :src="pro.imagen" :alt="pro.descripcion" />
             </div>
           </swiper-slide>
         </swiper>
+      </div>
+      <div v-for="(tecno, index) in proyectos[tecnologis]" :key="index" class="text-center">
+        <div class="flex justify-evenly">
+          <div v-for="(tec, i) in tecno.tecnologia" :key="i" class="mx-4">
+            <img :src="tec" :alt="tecno.nombreTecno[i]" class="mx-auto">
+            <div class="text-lg font-semibold text-gray-800 mt-2"> {{ tecno.nombreTecno[i] }}</div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
