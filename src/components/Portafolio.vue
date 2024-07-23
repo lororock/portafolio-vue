@@ -79,7 +79,7 @@ defineExpose({ proyectos });
         </swiper>
       </div>
       <div v-for="(tecno, index) in proyectos[tecnologis]" :key="index" class="text-center">
-        <div class="flex justify-evenly">
+        <div class="flex justify-evenly items-center">
           <div v-for="(tec, i) in tecno.tecnologia" :key="i" class="mx-4">
             <img :src="tec" :alt="tecno.nombreTecno[i]" class="mx-auto">
             <div class="text-lg font-semibold text-gray-800 mt-2"> {{ tecno.nombreTecno[i] }}</div>
