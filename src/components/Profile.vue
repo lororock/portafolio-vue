@@ -125,7 +125,6 @@ const modules = ref([EffectCards,]);
         </swiper>
       </div>
     </div>
-
   </div>
 </template>
 
