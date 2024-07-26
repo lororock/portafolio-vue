@@ -114,12 +114,12 @@ const modules = ref([EffectCards,]);
         </div>
 
       </div>
-      <div class="block md:hidden mx-auto max-w-screen-sm px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
-        <swiper class="mySwiper" :modules="modules" :effect="'cards'" :grabCursor="true" @swiper="onSwiper"
+      <div class="block mx-11 px-4 py-8 max-w-[277px] sm:mx-auto sm:px-6 sm:py-12 md:hidden sm:max-w-[444px] lg:px-8">
+        <swiper class="mySwiper" max-w-7xl :modules="modules" :effect="'cards'" :grabCursor="true" @swiper="onSwiper"
           @slideChange="onSlideChange">
           <swiper-slide v-for="(cer, index) in certificados" :key="index">
             <div>
-              <img class="h-full" :src="cer.imagen" alt="pro.descripcion" />
+              <img class="" :src="cer.imagen" alt="pro.descripcion" />
             </div>
           </swiper-slide>
         </swiper>
