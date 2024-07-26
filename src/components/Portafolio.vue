@@ -73,13 +73,13 @@ defineExpose({ proyectos });
           @slideChange="onSlideChange">
           <swiper-slide v-for="(pro, index) in proyectos" :key="index">
             <div @click="mostrarPopAds(pro)">
-              <img class="mh-full" @change="onSlideChange(pro.index)" :src="pro.imagen" :alt="pro.descripcion" />
+              <img @change="onSlideChange(pro.index)" :src="pro.imagen" :alt="pro.descripcion" />
             </div>
           </swiper-slide>
         </swiper>
       </div>
       <div v-for="(tecno, index) in proyectos[tecnologis]" :key="index" class="text-center">
-        <div class="flex justify-evenly items-center">
+        <div class="flex justify-evenly items-center flex-wrap">
           <div v-for="(tec, i) in tecno.tecnologia" :key="i" class="mx-4">
             <img :src="tec" :alt="tecno.nombreTecno[i]" class="mx-auto">
             <div class="text-lg font-semibold text-gray-800 mt-2"> {{ tecno.nombreTecno[i] }}</div>
