@@ -4,7 +4,10 @@ import { certificados } from "../assets/certificados";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import { EffectCards } from 'swiper/modules';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import { EffectCards, Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 // Swiper methods and modules
 const onSwiper = (swiper) => {
@@ -13,14 +16,14 @@ const onSwiper = (swiper) => {
 const onSlideChange = (i) => {
   console.log('slide change');
 };
-const modules = ref([EffectCards,]);
+const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
 </script>
 
 <template>
   <div class="bg-local" id="profile">
     <div class="bg-cover contents bg-center h-screen">
       <div
-        class="mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
+        class="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:mt-5 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
           <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Cristhian Rosas
@@ -114,13 +117,12 @@ const modules = ref([EffectCards,]);
         </div>
 
       </div>
-      <div class="block mx-11 px-4 py-8 max-w-[277px] sm:mx-auto sm:px-6 sm:py-12 md:hidden sm:max-w-[444px] lg:px-8">
-        <swiper class="mySwiper" max-w-7xl :modules="modules" :effect="'cards'" :grabCursor="true" @swiper="onSwiper"
+      <div class="block md:hidden mx-auto max-w-screen-sm px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <swiper class="bg-white rounded-lg border border-gray-200 shadow-lg p-4" :modules="modules" :slides-per-view="1"
+          :space-between="50" navigation :pagination="{ dynamicBullets: true }" @swiper="onSwiper"
           @slideChange="onSlideChange">
-          <swiper-slide v-for="(cer, index) in certificados" :key="index">
-            <div>
-              <img class="" :src="cer.imagen" alt="pro.descripcion" />
-            </div>
+          <swiper-slide class="flex items-center" v-for="(cer, index) in certificados" :key="index">
+            <img class="" :src="cer.imagen" alt="pro.descripcion" />
           </swiper-slide>
         </swiper>
       </div>
