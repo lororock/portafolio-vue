@@ -26,7 +26,7 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
         class="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:mt-5 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
           <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Cristhian Rosas
+            Cristhian Fernando Rosas
           </h1>
           <p class="mt-4 text-gray-500">
             ¡Saludos! Soy un Desarrollador de SOFTWARE apasionado por crear experiencias digitales excepcionales. Mi
