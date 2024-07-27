@@ -26,10 +26,10 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
         class="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:mt-5 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
           <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Cristhian Fernando Rosas
+            Cristhian Rosas
           </h1>
           <p class="mt-4 text-gray-500">
-            ¡Saludos! Soy un Desarrollador de FRONTEND apasionado por crear experiencias digitales excepcionales. Mi
+            ¡Saludos! Soy un Desarrollador de SOFTWARE apasionado por crear experiencias digitales excepcionales. Mi
             misión
             es impulsar la innovación y colaborar con empresas para alcanzar sus metas en el mundo digital. A través de
             mi
@@ -44,7 +44,7 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
             <div class="border-t border-gray-200 pt-4">
               <dt class="font-medium text-gray-900">Area</dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Software FRONTEND developer, IT.
+                Software FULLSTACK developer, IT.
               </dd>
             </div>
 
@@ -68,7 +68,8 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
             <div class="border-t border-gray-200 pt-4">
               <dt class="font-medium text-gray-900">Tecnologías</dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Vue, React, Astro, Node, Express, TypeScript, Firebase, Git.
+                Vue, React, Astro, Node, Nuxt, Axios, Express, TypeScript, Firebase,
+                MongoDB, Git.
               </dd>
             </div>
 
