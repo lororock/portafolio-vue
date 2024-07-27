@@ -44,14 +44,14 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
             <div class="border-t border-gray-200 pt-4">
               <dt class="font-medium text-gray-900">Area</dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Software fullstack developer, IT.
+                Software FRONTEND developer, IT.
               </dd>
             </div>
 
             <div class="border-t border-gray-200 pt-4">
               <dt class="font-medium text-gray-900">Experiencia</dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Desarrollo frontend 3 años, desarrollo backend 1
+                Desarrollo FRONTEND 3 años, desarrollo BACKEND 1
                 año.
               </dd>
             </div>
