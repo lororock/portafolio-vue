@@ -25,10 +25,10 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
       <div
         class="mx-auto mt-16 grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 py-24 sm:mt-5 sm:px-6 sm:py-32 lg:max-w-7xl lg:grid-cols-2 lg:px-8">
         <div>
-          <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h1 class="animate-[wiggle_0.5s] text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             Cristhian Fernando Rosas
           </h1>
-          <p class="mt-4 text-gray-500">
+          <p class="animate-[wiggle_1s_ease-in-out] mt-4 text-gray-500">
             ¡Saludos! Soy un Desarrollador de SOFTWARE apasionado por crear experiencias digitales excepcionales. Mi
             misión
             es impulsar la innovación y colaborar con empresas para alcanzar sus metas en el mundo digital. A través de
@@ -41,48 +41,48 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
           </p>
 
           <dl class="mt-14 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
-            <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Area</dt>
-              <dd class="mt-2 text-sm text-gray-500">
+            <div class="animate-[wiggle_0.5s] border-t border-gray-200 pt-4">
+              <dt class="animate-[wiggle_0.5s] font-medium text-gray-900">Area</dt>
+              <dd class="animate-[wiggle_1s] mt-2 text-sm text-gray-500">
                 Software FULLSTACK developer, IT.
               </dd>
             </div>
 
-            <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Experiencia</dt>
-              <dd class="mt-2 text-sm text-gray-500">
+            <div class="animate-[wiggle_0.5s] border-t border-gray-200 pt-4">
+              <dt class="animate-[wiggle_0.5s] font-medium text-gray-900">Experiencia</dt>
+              <dd class="animate-[wiggle_1s] mt-2 text-sm text-gray-500">
                 Desarrollo FRONTEND 3 años, desarrollo BACKEND 1
                 año.
               </dd>
             </div>
 
-            <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Proyectos</dt>
-              <dd class="mt-2 text-sm text-gray-500">
+            <div class="animate-[wiggle_0.5s] border-t border-gray-200 pt-4">
+              <dt class="animate-[wiggle_0.5s] font-medium text-gray-900">Proyectos</dt>
+              <dd class="animate-[wiggle_1s] mt-2 text-sm text-gray-500">
                 Gestión de ventas e inventarios, agendamiento de cursos y
                 horarios universitarios, sistema de Administración de Recursos Humanos, Maquetación de Aplicaciones Web,
                 E-commerce.
               </dd>
             </div>
 
-            <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Tecnologías</dt>
-              <dd class="mt-2 text-sm text-gray-500">
+            <div class="animate-[wiggle_0.5s] border-t border-gray-200 pt-4">
+              <dt class="animate-[wiggle_0.5s] font-medium text-gray-900">Tecnologías</dt>
+              <dd class="animate-[wiggle_1s] mt-2 text-sm text-gray-500">
                 Vue, React, Astro, Node, Nuxt, Axios, Express, TypeScript, Firebase,
                 MongoDB, Git.
               </dd>
             </div>
 
-            <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Metodologias agiles</dt>
-              <dd class="mt-2 text-sm text-gray-500">
+            <div class="animate-[wiggle_0.5s] border-t border-gray-200 pt-4">
+              <dt class="animate-[wiggle_0.5s] font-medium text-gray-900">Metodologias agiles</dt>
+              <dd class="animate-[wiggle_1s] mt-2 text-sm text-gray-500">
                 Scrum con buena comunicación y participación con el equipo.
               </dd>
             </div>
 
-            <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Educación</dt>
-              <dd class="mt-2 text-sm text-gray-500">
+            <div class="animate-[wiggle_0.5s] border-t border-gray-200 pt-4">
+              <dt class="animate-[wiggle_0.5s] font-medium text-gray-900">Educación</dt>
+              <dd class="animate-[wiggle_1s] mt-2 text-sm text-gray-500">
                 Ing. Electronica, Documentación, Cursos de Udemy, Oracle academy, Youtube
                 Aplicaciones móviles.
               </dd>
@@ -91,7 +91,7 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
         </div>
         <div class="hidden md:grid sm:gap-6 lg:gap-8 relative z-2">
           <div class="mx-auto max-w-screen-sm px-4 py-4 sm:px-6 sm:py-12 lg:px-8">
-            <swiper class="mySwiper" :modules="modules" :effect="'cards'" :grabCursor="true" @swiper="onSwiper"
+            <swiper class="mySwiper animate-[wiggle_1s_ease-in-out]" :modules="modules" :effect="'cards'" :grabCursor="true" @swiper="onSwiper"
               @slideChange="onSlideChange">
               <swiper-slide v-for="(cer, index) in certificados" :key="index">
                 <div>
@@ -100,7 +100,7 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
               </swiper-slide>
             </swiper>
           </div>
-          <div class="flex absolute -bottom-px left-1/2 -ml-48 h-[2px] w-96">
+          <div class="animate-[wiggle_1s] flex absolute -bottom-px left-1/2 -ml-48 h-[2px] w-96">
             <div
               class="w-full flex-none blur-sm [background-image:linear-gradient(90deg,rgba(56,189,248,0)_0%,#0EA5E9_32.29%,rgba(236,72,153,0.3)_67.19%,rgba(236,72,153,0)_100%)]">
             </div>
