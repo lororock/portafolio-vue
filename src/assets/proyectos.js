@@ -73,8 +73,8 @@ export const proyectos = [
     imagen: aythen,
     proyecto: fullAythen,
     tecnologias: {
-      tecnologia: [react, redux, aws],
-      nombreTecno: ["ReactJs", "Redux", "Aws"],
+      tecnologia: [angular, node, aws],
+      nombreTecno: ["Angular", "Node", "Aws"],
     },
     enlace: "https://aythen.com",
   },
