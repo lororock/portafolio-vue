@@ -10,7 +10,7 @@
           Personaliza tus productos según tus necesidades y hazlos únicos.
         </p>
 
-        <a href="https://drive.google.com/file/d/1yia_ODMXAw7_3F7DHNhcvlgVTS1EhMpX/view?usp=sharing" target="_blank"
+        <a href="https://drive.google.com/file/d/1HuygCwdsIjC1eALf7JWAJiihGcP8fHWr/view?usp=sharing" target="_blank"
           class="inline-block px-12 py-3 mt-8 text-sm font-medium text-indigo-600 border border-indigo-600 rounded-full hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500">
           Descargar mi CV
         </a>
