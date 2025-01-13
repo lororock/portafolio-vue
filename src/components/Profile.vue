@@ -32,69 +32,63 @@ const modules = ref([EffectCards, Navigation, Pagination, Scrollbar]);
             Cristhian Rosas
           </h1>
           <p class="mt-4 text-gray-500">
-            Desarrollador de Software apasionado por crear
-            experiencias digitales excepcionales. Mi misión es impulsar la
-            innovación y colaborar con empresas para alcanzar sus metas en el
-            mundo digital. A través de mi experiencia en el Desarrollo Web, me
-            enfoco en diseñar y desarrollar soluciones únicas y eficientes que
-            brinden un valor significativo a los usuarios y ayuden a las
-            empresas a destacarse en el mercado. Estoy comprometido con la
-            excelencia y siempre busco oportunidades para aprender y crecer en
-            este emocionante campo del desarrollo tecnológico.
+            {{ $t("profile.description") }}
           </p>
 
           <dl
             class="mt-14 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8"
           >
             <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Area</dt>
+              <dt class="font-medium text-gray-900">
+                {{ $t("profile.area") }}
+              </dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Desarrollador Fullstack en TI | Creación de soluciones robustas
-                con enfoque en frontend y backend.
+                {{ $t("profile.areaText") }}
               </dd>
             </div>
 
             <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Experiencia</dt>
+              <dt class="font-medium text-gray-900">
+                {{ $t("profile.experience") }}
+              </dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Desarrollo frontend y backend, e implementaciones con SDKs,
-                optimizando soluciones digitales y conectando microservicios.
+                {{ $t("profile.experienceText") }}
               </dd>
             </div>
 
             <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Proyectos</dt>
+              <dt class="font-medium text-gray-900">
+                {{ $t("profile.projects") }}
+              </dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Gestión de ventas e inventarios, agendamiento de cursos y
-                horarios universitarios, sistema de Administración de Recursos
-                Humanos, Maquetación de Aplicaciones Web, E-commerce.
+                {{ $t("profile.projectsText") }}
               </dd>
             </div>
 
             <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Tecnologías</dt>
+              <dt class="font-medium text-gray-900">
+                {{ $t("profile.Technologies") }}
+              </dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Dominio de frameworks y herramientas como Vue, React, Angular y
-                Nuxt para frontend. Experiencia en backend con Node.js, Express
-                y bases de datos como MongoDB y Firebase. Uso avanzado de
-                TypeScript y control de versiones con Git.
+                {{ $t("profile.TechnologiesText") }}
               </dd>
             </div>
 
             <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Metodologias agiles</dt>
+              <dt class="font-medium text-gray-900">
+                {{ $t("profile.methodologies") }}
+              </dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Práctica de metodologías ágiles como Scrum, fomentando una
-                comunicación efectiva y colaboración activa en equipos
-                multifuncionales.
+                {{ $t("profile.methodologiesText") }}
               </dd>
             </div>
 
             <div class="border-t border-gray-200 pt-4">
-              <dt class="font-medium text-gray-900">Educación</dt>
+              <dt class="font-medium text-gray-900">
+                {{ $t("profile.education") }}
+              </dt>
               <dd class="mt-2 text-sm text-gray-500">
-                Ing. Electronica, Documentación, Cursos de Udemy, Oracle
-                academy, Youtube Aplicaciones móviles.
+                {{ $t("profile.educationText") }}
               </dd>
             </div>
           </dl>
