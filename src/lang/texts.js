@@ -22,10 +22,10 @@ export const texts = {
       area: "Area",
       areaText:
         "Desarrollador Fullstack en TI, Creación de soluciones robustas con enfoque en frontend y backend.",
-      experience: "experiencia",
+      experience: "Experiencia",
       experienceText:
         "Desarrollo frontend y backend, e implementaciones con SDKs, optimizando soluciones digitales y conectando microservicios.",
-      projects: "proyectos",
+      projects: "Proyectos",
       projectsText:
         "Desarrollo frontend y backend, e implementaciones con SDKs, optimizando soluciones digitales y conectando microservicios.",
       Technologies: "Tecnologías",
@@ -38,7 +38,12 @@ export const texts = {
       educationText:
         "Ing. Electronica, Documentación, Cursos de Udemy, Oracle academy, Youtube Aplicaciones móviles.",
     },
-    cv: {},
+    cv: {
+      title: 'Customiza tu producto',
+      text: 'Personaliza tus productos según tus necesidades y hazlos únicos.',
+      link: 'https://drive.google.com/file/d/1HuygCwdsIjC1eALf7JWAJiihGcP8fHWr/view?usp=sharing',
+      download: 'Descargar mi CV'    
+    },
     portafolio: {},
     footer: {},
   },
