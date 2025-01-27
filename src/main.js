@@ -5,6 +5,7 @@ import './assets/style.css'
 import App from './App.vue'
 
 const i18n = createI18n({
+    legacy: false,
     locale: 'es',
     fallbackLocale: 'es',
     messages: texts

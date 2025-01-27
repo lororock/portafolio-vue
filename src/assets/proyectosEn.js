@@ -29,15 +29,15 @@ import pinia from "../assets/img/tecnologias/pinia.svg";
 import javascript from "../assets/img/tecnologias/javascript.svg";
 import bootstrap from "../assets/img/tecnologias/bootstrap.svg";
 
-export const proyectos = [
+export const proyectosEn = [
   {
     nombre: "Inventas",
     descripcion:
-      "Sistema de gestión integral para negocios de productos o servicios, que abarca el control de inventarios, el seguimiento de ventas y la gestión eficiente de empleados. Esta solución permite optimizar operaciones diarias y mejorar la administración del negocio.",
+      "Integrated management system for businesses offering products or services, covering inventory control, sales tracking, and efficient employee management. This solution allows for optimizing daily operations and improving business administration.",
     imagen: inventas,
     proyecto: fullInventas,
     tecnologias: {
-      tecnologia: [vue, pinia, tailwind, firebase, ],
+      tecnologia: [vue, pinia, tailwind, firebase],
       nombreTecno: ["VueJs", "PiniaJs", "Tailwind", "Firebase"],
     },
     enlace: "https://inventas-app.web.app/inicioSesion",
@@ -45,7 +45,7 @@ export const proyectos = [
   {
     nombre: "Dermocapilar",
     descripcion:
-      "Me encargué del desarrollo de la tienda en línea, implementando un carrito de compras intuitivo y una pasarela de pagos segura. También diseñé y desarrollé la sección de información para facilitar el acceso a detalles sobre productos, políticas de envío y contacto con la empresa.",
+      "I was responsible for developing the online store, implementing an intuitive shopping cart and a secure payment gateway. I also designed and developed the information section to facilitate access to product details, shipping policies, and company contact information.",
     imagen: dermocapilar,
     proyecto: fullDermocapilar,
     tecnologias: {
@@ -57,7 +57,7 @@ export const proyectos = [
   {
     nombre: "DNA music",
     descripcion:
-      "Sistema de gestión de prácticas para estudiantes, revisión de materias inscritas y administración de horarios. En la parte de administración, se incluye la creación de horarios de agendamiento. En la parte de profesores, se permite la revisión de asistencias a las prácticas inscritas.",
+      "Practice management system for students, reviewing enrolled subjects and managing schedules. In the administration section, scheduling creation is included. In the professors' section, attendance tracking for enrolled practices is enabled.",
     imagen: dna,
     proyecto: fullDna,
     tecnologias: {
@@ -69,7 +69,7 @@ export const proyectos = [
   {
     nombre: "Aythen",
     descripcion:
-      "La aplicación que se desarrollo es una herramienta para crear plantillas de forma dinámica y generar código en HTML, Angular, React, Vue y Uidl. Esta aplicación está basada en otra plataforma llamada 'Teleporthq'. Los usuarios podrán crear plantillas personalizadas según sus necesidades, y luego obtener el código correspondiente en los diferentes formatos admitidos. Esto les permitirá ahorrar tiempo y esfuerzo al generar código repetitivo en múltiples frameworks.",
+      "The developed application is a tool for dynamically creating templates and generating code in HTML, Angular, React, Vue, and Uidl. This application is based on another platform called 'Teleporthq'. Users will be able to create customized templates according to their needs and then obtain the corresponding code in the various supported formats. This will save them time and effort when generating repetitive code across multiple frameworks.",
     imagen: aythen,
     proyecto: fullAythen,
     tecnologias: {
@@ -81,7 +81,7 @@ export const proyectos = [
   {
     nombre: "Anterior portafolio",
     descripcion:
-      "antiguo portafolio de presentación de mis proyectos y habilidades",
+      "Old portfolio showcasing my projects and skills.",
     imagen: portafolio,
     proyecto: fullPortafolio,
     tecnologias: {
@@ -93,7 +93,7 @@ export const proyectos = [
   {
     nombre: "Api peliculas",
     descripcion:
-      "Consumo de API para la creación de una página que muestra las últimas películas con su nombre y portada. Además, incluye paginación para navegar hasta películas más antiguas.",
+      "API consumption for creating a page that displays the latest movies with their name and poster. Additionally, it includes pagination to navigate to older movies.",
     imagen: peliculas,
     proyecto: fullPeliculas,
     tecnologias: {
@@ -105,7 +105,7 @@ export const proyectos = [
   {
     nombre: "Gestor de gastos",
     descripcion:
-      "Sistema de cálculo de presupuesto que genera un análisis basado en los ingresos y egresos, proporcionando el total de ambos.",
+      "Budget calculation system that generates an analysis based on income and expenses, providing the total of both.",
     imagen: presupuesto,
     proyecto: fullPresupuesto,
     tecnologias: {

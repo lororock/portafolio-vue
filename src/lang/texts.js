@@ -44,7 +44,11 @@ export const texts = {
       link: 'https://drive.google.com/file/d/1HuygCwdsIjC1eALf7JWAJiihGcP8fHWr/view?usp=sharing',
       download: 'Descargar mi CV'    
     },
-    portafolio: {},
+    portafolio: {
+      title: 'Portafolio de proyectos',
+      text: 'Aquí en mi portafolio, encontrarás una selección de algunos de mis proyectos más recientes. Cada uno de ellos representa un desafío único que tuve que superar y una oportunidad para demostrar mis habilidades y creatividad. Espero que disfrutes viendo mis proyectos tanto como yo disfruté trabajando en ellos.',
+      idioma: 'es',
+    },
     footer: {},
   },
   en: {},
