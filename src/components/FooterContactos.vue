@@ -22,7 +22,11 @@ export default {
 </script>
 
 <template>
-  <footer aria-label="Site Footer" class="bg-white lg:grid lg:grid-cols-5" id="footer_contactos">
+  <footer
+    aria-label="Site Footer"
+    class="bg-white lg:grid lg:grid-cols-5"
+    id="footer_contactos"
+  >
     <div class="relative block h-32 lg:col-span-2 lg:h-full">
       <img
         src="../assets/img/portada.webp"
@@ -35,7 +39,7 @@ export default {
         <div>
           <p>
             <span class="text-xs tracking-wide text-gray-500 uppercase">
-              contacto personal
+              {{ $t("footer.contact") }}
             </span>
             <a
               class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl"
@@ -45,9 +49,9 @@ export default {
           </p>
 
           <ul class="mt-8 space-y-1 text-sm text-gray-700">
-            <li>Disponible para comunicación.</li>
-            <li>LUNES A VIERNES: 7:00 am - 5:00 pm</li>
-            <li>FIN DE SEMANA: 7:00 am - 3:00 pm</li>
+            <li>{{ $t("footer.available") }}</li>
+            <li>{{ $t("footer.week") }}</li>
+            <li>{{ $t("footer.weekend") }}</li>
           </ul>
 
           <ul class="flex gap-6 mt-8">
@@ -149,37 +153,37 @@ export default {
 
         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div>
-            <p class="font-medium text-gray-900">Servicios</p>
+            <p class="font-medium text-gray-900">{{ $t("footer.services") }}</p>
 
             <nav aria-label="Footer Navigation - Services" class="mt-6">
               <ul class="space-y-4 text-sm">
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Maquetación web
+                    {{ $t("footer.layout") }}
                   </a>
                 </li>
 
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Código escalable
+                    {{ $t("footer.code") }}
                   </a>
                 </li>
 
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Creación de aplicaciones web
+                    {{ $t("footer.creating") }}
                   </a>
                 </li>
 
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Mantenimiento de aplicaciones
+                    {{ $t("footer.maintenance") }}
                   </a>
                 </li>
 
                 <li>
                   <a class="text-gray-700 transition hover:opacity-75">
-                    Optimización de SEO
+                    {{ $t("footer.seo") }}
                   </a>
                 </li>
               </ul>
@@ -187,7 +191,7 @@ export default {
           </div>
 
           <div>
-            <p class="font-medium text-gray-900">Compañias</p>
+            <p class="font-medium text-gray-900">{{ $t("footer.company") }}</p>
 
             <nav aria-label="Footer Navigation - Company" class="mt-6">
               <ul class="space-y-4 text-sm">
