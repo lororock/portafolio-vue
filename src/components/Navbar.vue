@@ -35,25 +35,25 @@ const actualizarVisualizar2 = (valor) => {
                   <a
                     href="#profile"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    >Sobre mi</a
+                    >{{ $t("navbar.aboutMe") }}</a
                   >
 
                   <a
                     href="#cv"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    >Hoja de vida</a
+                    >{{ $t("navbar.cv") }}</a
                   >
 
                   <a
                     href="#projects"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    >Proyectos</a
+                    >{{ $t("navbar.projects") }}</a
                   >
 
                   <a
                     href="#footer_contactos"
                     class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                    >Contactos</a
+                    >{{ $t("navbar.contacts") }}</a
                   >
                 </div>
               </div>
@@ -125,7 +125,7 @@ const actualizarVisualizar2 = (valor) => {
                       role="menuitem"
                       tabindex="-1"
                       id="user-menu-item-0"
-                      >Referencias Profesionales
+                      >{{ $t("navbar.references") }}
                     </a>
 
                     <a
@@ -203,25 +203,25 @@ const actualizarVisualizar2 = (valor) => {
             <a
               href="#profile"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-              >Sobre mi</a
+              >{{ $t("navbar.aboutMe") }}</a
             >
 
             <a
               href="#cv"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-              >Hoja de vida</a
+              >{{ $t("navbar.cv") }}</a
             >
 
             <a
               href="#projects"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-              >Proyectos</a
+              >{{ $t("navbar.projects") }}</a
             >
 
             <a
               href="#footer_contactos"
               class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-              >Contactos</a
+              >{{ $t("navbar.contacts") }}</a
             >
           </div>
           <div class="border-t border-gray-700 pb-3 pt-4">
@@ -265,7 +265,7 @@ const actualizarVisualizar2 = (valor) => {
               <a
                 href="#"
                 class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white"
-                >Referencias Profesionales :
+                >{{ $t("navbar.references") }}
               </a>
 
               <a

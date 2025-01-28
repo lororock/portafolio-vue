@@ -88,13 +88,10 @@ const enviarCorreo = () => {
                 <h2
                   class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
                 >
-                  ¡Ponte en contacto conmigo!
+                  {{ $t("correo.title") }}
                 </h2>
                 <p class="mx-auto mt-4 max-w-md text-center text-gray-500">
-                  ¡Gracias por visitar mi sitio web! Si tienes alguna pregunta,
-                  comentario o estás interesado en colaborar, por favor utiliza
-                  el formulario de contacto a continuación. Estaré encantado de
-                  escucharte y responder a tus consultas.
+                  {{ $t("correo.texto") }}
                 </p>
               </div>
 
@@ -109,7 +106,7 @@ const enviarCorreo = () => {
                       <label
                         for="name"
                         class="block text-sm font-medium leading-6 text-gray-900"
-                        >Nombre</label
+                        >{{ $t("correo.name") }}</label
                       >
                     </div>
                     <div class="mt-2">
@@ -129,7 +126,7 @@ const enviarCorreo = () => {
                     <label
                       for="email"
                       class="block text-sm font-medium leading-6 text-gray-900"
-                      >Correo</label
+                      >{{ $t("correo.email") }}</label
                     >
                     <div class="mt-2">
                       <input
@@ -147,14 +144,14 @@ const enviarCorreo = () => {
                       @click="actualizarVisualizar(false)"
                       class="flex justify-center items-center rounded-md bg-red-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
                     >
-                      Cancelar
+                      {{ $t("correo.cancel") }}
                     </button>
 
                     <button
                       type="submit"
                       class="flex justify-center items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     >
-                      ENVIAR
+                      {{ $t("correo.send") }}
                     </button>
                   </div>
                 </form>
