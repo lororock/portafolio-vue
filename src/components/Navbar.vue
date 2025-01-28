@@ -60,6 +60,13 @@ const actualizarVisualizar2 = (valor) => {
             </div>
             <div class="hidden md:block">
               <div class="ml-4 flex items-center md:ml-6">
+                <select
+                  class="rounded-full bg-gray-800 text-gray-400 hover:text-white mr-5"
+                  v-model="$i18n.locale"
+                >
+                  <option value="es">Es</option>
+                  <option value="en">En</option>
+                </select>
                 <button
                   @click="actualizarVisualizar2(true)"
                   class="rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -153,6 +160,13 @@ const actualizarVisualizar2 = (valor) => {
             </div>
             <div class="-mr-2 flex md:hidden">
               <!-- Mobile menu button -->
+              <select
+                class="rounded-full bg-gray-800 text-gray-400 hover:text-white mr-5"
+                v-model="$i18n.locale"
+              >
+                <option value="es">Es</option>
+                <option value="en">En</option>
+              </select>
               <button
                 type="button"
                 class="inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
