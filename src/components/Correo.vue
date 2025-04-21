@@ -39,7 +39,7 @@ const enviarCorreo = () => {
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Correo enviado",
+        title: "Correo enviados",
         showConfirmButton: false,
         timer: 1500,
       });
