@@ -1,23 +1,25 @@
 
-
+import aprueba from "../assets/img/principal/aprueba.webp";
+import llamarada from "../assets/img/principal/llamarada.webp";
 import inventas from "../assets/img/principal/inventas.webp";
 import portafolio from "../assets/img/principal/oldportafolio.webp";
 import dna from "../assets/img/principal/DNA.webp";
-import presupuesto from "../assets/img/principal/gastos.webp";
 import peliculas from "../assets/img/principal/peliculas.webp";
 import aythen from "../assets/img/principal/Aythen.webp";
 import dermocapilar from "../assets/img/principal/dermocapilar.webp";
 
+import fullAprueba from "../assets/img/fullscreen/aprueba.webp";
+import fullLlamarada from "../assets/img/fullscreen/llamarada.webp";
 import fullInventas from "../assets/img/fullscreen/inventas.webp";
 import fullPortafolio from "../assets/img/fullscreen/portafolio.webp";
 import fullDna from "../assets/img/fullscreen/DNA.webp";
-import fullPresupuesto from "../assets/img/fullscreen/gastos.webp";
 import fullPeliculas from "../assets/img/fullscreen/peliculas.webp";
 import fullAythen from "../assets/img/fullscreen/Aythen.webp";
 import fullDermocapilar from "../assets/img/fullscreen/dermocapilar.webp";
 
 import vue from "../assets/img/tecnologias/vue.svg";
 import react from "../assets/img/tecnologias/react.svg";
+import astro from "../assets/img/tecnologias/astro.svg";
 import node from "../assets/img/tecnologias/node.svg";
 import firebase from "../assets/img/tecnologias/firebase.svg";
 import tailwind from "../assets/img/tecnologias/tailwind.svg";
@@ -30,8 +32,33 @@ import html from "../assets/img/tecnologias/html.svg";
 import pinia from "../assets/img/tecnologias/pinia.svg";
 import javascript from "../assets/img/tecnologias/javascript.svg";
 import bootstrap from "../assets/img/tecnologias/bootstrap.svg";
+import zustand from "../assets/img/tecnologias/zustand.svg";
 
 export const proyectosEs = [
+  {
+    nombre: "Aprueba",
+    descripcion:
+      "Aplicación web fullstack para ofrecer cursos gratuitos en línea, con opción de donar para obtener un certificado. Permite a los usuarios registrarse, acceder a contenido, seguir su progreso y validar certificados mediante código QR. Migré y adapté la lógica desde una plataforma anterior de cursos pagos, mejorando el backend, la base de datos y corrigiendo errores para ajustarse al nuevo enfoque gratuito.",
+    imagen: aprueba,
+    proyecto: fullAprueba,
+    tecnologias: {
+      tecnologia: [react, tailwind, axios,  zustand],
+      nombreTecno: ["ReactJs", "Tailwind", "Axios", "Zustand"],
+    },
+    enlace: "https://cursosaprueba.com/",
+  },
+      {
+        nombre: "Llamarada",
+        descripcion:
+          "Diseñé y desarrollé la página principal de una empresa dedicada al marketing, diseño gráfico y producción audiovisual. La landing page presenta de forma clara sus servicios, muestra el portafolio y destaca al equipo de trabajo, transmitiendo una imagen profesional y creativa. Además de esta web corporativa, también desarrollé páginas web para varios de sus clientes, adaptándome a distintas necesidades visuales y funcionales.",
+        imagen: llamarada,
+        proyecto: fullLlamarada,
+        tecnologias: {
+          tecnologia: [astro, tailwind, node],
+          nombreTecno: ["Astro", "Tailwind", "NodeJs"],
+        },
+        enlace: "https://llamaradaweb.netlify.app/",
+      },
   {
     nombre: "Inventas",
     descripcion:
@@ -51,8 +78,8 @@ export const proyectosEs = [
     imagen: dermocapilar,
     proyecto: fullDermocapilar,
     tecnologias: {
-      tecnologia: [react, tailwind, node],
-      nombreTecno: ["ReactJs", "Tailwind", "Nodejs"],
+      tecnologia: [react, tailwind, redux, node],
+      nombreTecno: ["ReactJs", "Tailwind", "Redux", "Nodejs"],
     },
     enlace: "https://dermocapilar.com.co",
   },
@@ -103,17 +130,5 @@ export const proyectosEs = [
       nombreTecno: ["Vuejs", "Css", "Axios"],
     },
     enlace: "https://double-v-partners-prueba-tecnica.netlify.app",
-  },
-  {
-    nombre: "Gestor de gastos",
-    descripcion:
-      "Sistema de cálculo de presupuesto que genera un análisis basado en los ingresos y egresos, proporcionando el total de ambos.",
-    imagen: presupuesto,
-    proyecto: fullPresupuesto,
-    tecnologias: {
-      tecnologia: [html, css, javascript],
-      nombreTecno: ["Html", "Css", "Javascript"],
-    },
-    enlace: "https://regal-crepe-84ee70.netlify.app",
-  },
+  }
 ];
