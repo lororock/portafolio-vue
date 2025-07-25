@@ -41,7 +41,7 @@ export const texts = {
     cv: {
       title: "Customiza tu producto",
       text: "Personaliza tus productos según tus necesidades y hazlos únicos.",
-      link: "https://drive.google.com/file/d/1wSpj0xdZNaZcUcyr5E2CKNcPsfKVPVMc/view?usp=sharing",
+      link: "https://drive.google.com/file/d/13zbG6liz8LJTSyjn3gvCKNrU8QR69rKY/view?usp=sharing",
       download: "Descargar mi CV",
     },
     portafolio: {
@@ -105,7 +105,7 @@ export const texts = {
     cv: {
       title: "Customize your product",
       text: "Customize your products according to your needs and make them unique.",
-      link: "https://drive.google.com/file/d/1rIC_Plio87fRQdTyCb1aihnUOJmdzECK/view?usp=sharing",
+      link: "https://drive.google.com/file/d/1CzqPTpW6gvjXQH_UcAoLloyRBZz98hPq/view?usp=sharing",
       download: "Download my resume",
     },
     portafolio: {
