@@ -5,7 +5,7 @@
     >
       <div class="text-center">
         <h2 class="text-3xl font-extrabold text-gray-900 sm:text-5xl">
-          {{ $t("cv.title") }}
+          {{ $t("cv.title") }} titulo
         </h2>
 
         <p class="max-w-sm mx-auto mt-4 text-gray-500">
