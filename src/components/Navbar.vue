@@ -82,7 +82,7 @@ const irA = (id) => {
       class="border-b border-white/10 bg-base-950/70 backdrop-blur-xl"
       aria-label="Navegación principal"
     >
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 xl:max-w-[1400px] 2xl:max-w-[1536px]">
         <div class="flex h-16 items-center justify-between">
           <!-- Logo -->
           <a

@@ -59,7 +59,7 @@ onUnmounted(() => {
 
 <template>
   <section id="projects" class="relative py-24">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 xl:max-w-[1400px] 2xl:max-w-[1536px]">
       <!-- Encabezado -->
       <header v-reveal class="max-w-2xl">
         <h2
@@ -104,7 +104,7 @@ onUnmounted(() => {
       </div>
 
       <!-- Grid de proyectos -->
-      <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8 xl:gap-10">
         <article
           v-for="(proyecto, index) in proyectosFiltrados"
           :key="proyecto.nombre"

@@ -61,7 +61,7 @@ const companias = ["Inventas", "Digiworld", "Aythen"];
       aria-hidden="true"
     ></div>
 
-    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20 xl:max-w-[1400px] 2xl:max-w-[1536px]">
       <div class="grid grid-cols-1 gap-12 lg:grid-cols-3">
         <!-- Contacto -->
         <div v-reveal>

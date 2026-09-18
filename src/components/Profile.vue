@@ -46,7 +46,7 @@ const irAProyectos = () => {
     </div>
 
     <div
-      class="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-x-12 gap-y-16 px-4 pb-24 pt-32 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-40"
+      class="relative mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-x-12 gap-y-16 px-4 pb-24 pt-32 sm:px-6 lg:grid-cols-2 lg:px-8 lg:pt-40 xl:max-w-[1400px] 2xl:max-w-[1536px]"
     >
       <!-- Columna de texto -->
       <div>
@@ -101,7 +101,7 @@ const irAProyectos = () => {
         </div>
 
         <!-- Tarjetas de datos -->
-        <dl class="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2">
+        <dl class="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:gap-5 xl:gap-6">
           <div
             v-for="(dato, index) in datos"
             :key="dato.titulo"

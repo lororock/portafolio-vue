@@ -1,6 +1,6 @@
 <template>
   <section aria-label="Hoja de vida" id="cv" class="relative py-24">
-    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+    <div class="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 xl:max-w-[1400px] 2xl:max-w-[1536px]">
       <!-- Tarjeta con borde degradado animado -->
       <div v-reveal class="relative mx-auto max-w-3xl">
         <div
