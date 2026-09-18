@@ -1,3 +1,4 @@
+import tituloSistemas from "../assets/img/certificados/titulo-sistemas.jpg";
 import javaOracle from "../assets/img/certificados/java-oracle.webp";
 import FullStackLink from "../assets/img/certificados/full-stack-linkedin.webp";
 import javaScriptAvanzadoLink from "../assets/img/certificados/javascript-avanzado-linkedin.webp";
@@ -8,6 +9,10 @@ import cssSolo from "../assets/img/certificados/css-sololearn.webp";
 import htmlSolo from "../assets/img/certificados/html-sololearn.webp";
 
 export const certificados = [
+  {
+    nombre: "Título Profesional - Ing. de Sistemas",
+    imagen: tituloSistemas,
+  },
   {
     nombre: "Java Oracle",
     imagen: javaOracle,

@@ -130,7 +130,7 @@ const irAProyectos = () => {
         >
           {{ $t("profile.certificates") }}
         </p>
-        <div class="mx-auto max-w-md animate-float">
+        <div class="mx-auto max-w-[34rem] animate-float">
           <swiper
             class="certificates-swiper"
             :modules="modules"
@@ -139,15 +139,17 @@ const irAProyectos = () => {
           >
             <swiper-slide
               v-for="(cer, index) in certificados"
-              :key="index"
-              class="overflow-hidden rounded-xl"
+              :key="cer.nombre"
+              class="certificate-slide"
             >
-              <img
-                class="h-full w-full object-cover"
-                :src="cer.imagen"
-                :alt="`Certificado ${index + 1}`"
-                loading="lazy"
-              />
+              <div class="certificate-frame">
+                <img
+                  class="certificate-frame__img"
+                  :src="cer.imagen"
+                  :alt="cer.nombre"
+                  loading="lazy"
+                />
+              </div>
             </swiper-slide>
           </swiper>
         </div>
@@ -179,16 +181,18 @@ const irAProyectos = () => {
         :pagination="{ dynamicBullets: true }"
       >
         <swiper-slide
-          class="flex items-center overflow-hidden rounded-lg"
-          v-for="(cer, index) in certificados"
-          :key="index"
+          v-for="cer in certificados"
+          :key="cer.nombre"
+          class="certificate-slide"
         >
-          <img
-            class="w-full"
-            :src="cer.imagen"
-            :alt="`Certificado ${index + 1}`"
-            loading="lazy"
-          />
+          <div class="certificate-frame">
+            <img
+              class="certificate-frame__img"
+              :src="cer.imagen"
+              :alt="cer.nombre"
+              loading="lazy"
+            />
+          </div>
         </swiper-slide>
       </swiper>
     </div>
@@ -196,7 +200,46 @@ const irAProyectos = () => {
 </template>
 
 <style>
+.certificates-swiper {
+  width: 100%;
+  max-width: 34rem;
+}
+
 .certificates-swiper .swiper-slide {
+  width: 34rem !important;
+  height: 25.5rem !important;
+}
+
+.certificate-frame {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  padding: 0.375rem;
+}
+
+.certificate-frame__img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.certificate-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.certificate-slide .certificate-frame {
+  width: min(34rem, 100%);
+  height: 25.5rem;
+}
+
+.certificates-swiper .swiper-slide,
+.certificate-slide {
   border-radius: 0.75rem;
   box-shadow: 0 20px 50px -12px rgba(99, 102, 241, 0.35);
 }
