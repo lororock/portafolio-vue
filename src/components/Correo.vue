@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted, onUnmounted } from "vue";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
@@ -7,13 +7,7 @@ emailjs.init("SAIQQNv6oRUCEAad2");
 
 const name = ref("");
 const email = ref("");
-
-const props = defineProps({
-  visualizar: {
-    type: Boolean,
-    required: false,
-  },
-});
+const enviando = ref(false);
 
 const emit = defineEmits(["actualizarVisualizar"]);
 
@@ -21,7 +15,25 @@ const actualizarVisualizar = (valor) => {
   emit("actualizarVisualizar", valor);
 };
 
+const alPresionarTecla = (event) => {
+  if (event.key === "Escape") actualizarVisualizar(false);
+};
+
+// Bloquea el scroll del body mientras el modal está abierto
+onMounted(() => {
+  document.body.style.overflow = "hidden";
+  window.addEventListener("keydown", alPresionarTecla);
+});
+
+onUnmounted(() => {
+  document.body.style.overflow = "";
+  window.removeEventListener("keydown", alPresionarTecla);
+});
+
 const enviarCorreo = () => {
+  if (enviando.value) return;
+  enviando.value = true;
+
   const templateParams = {
     from_name: name.value,
     from_email: email.value,
@@ -29,134 +41,171 @@ const enviarCorreo = () => {
 
   emailjs
     .send("service_yyidnyt", "template_16few9i", templateParams)
-    .then((response) => {
-      console.log(
-        "Correo electrónico enviado:",
-        response.status,
-        response.text
-      );
-      actualizarVisualizar();
+    .then(() => {
+      actualizarVisualizar(false);
       Swal.fire({
         position: "top-end",
         icon: "success",
-        title: "Correo enviados",
+        title: "Correo enviado",
         showConfirmButton: false,
         timer: 1500,
+        background: "#161a23",
+        color: "#e2e8f0",
       });
     })
-    .catch((error) => {
-      console.error("Error al enviar el correo electrónico:", error);
+    .catch(() => {
       Swal.fire({
         icon: "error",
         title: "Oops...",
         text: "Error al enviar el correo electrónico",
         showConfirmButton: false,
         timer: 1500,
+        background: "#161a23",
+        color: "#e2e8f0",
       });
+    })
+    .finally(() => {
+      enviando.value = false;
     });
 };
 </script>
 
 <template>
   <div
-    class="relative z-10"
+    class="relative z-[70]"
     aria-labelledby="modal-title"
     role="dialog"
     aria-modal="true"
   >
+    <!-- Backdrop -->
     <div
-      class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+      class="fixed inset-0 bg-base-950/80 backdrop-blur-sm animate-fade-in"
+      @click="actualizarVisualizar(false)"
     ></div>
 
     <div class="fixed inset-0 z-10 overflow-y-auto">
       <div
-        class="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0"
+        class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"
       >
         <div
-          class="relative transform overflow-hidden rounded-lg bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg"
+          class="glass-card relative w-full transform overflow-hidden shadow-2xl shadow-accent-indigo/20 animate-fade-up sm:my-8 sm:max-w-lg"
+          @click.stop
         >
-          <div class="bg-white px-4 pb-4 pt-5 sm:p-6 sm:pb-4">
-            <div
-              class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8"
+          <!-- Borde superior degradado -->
+          <div
+            class="h-1 w-full bg-gradient-to-r from-accent-indigo via-accent-violet to-accent-cyan"
+            aria-hidden="true"
+          ></div>
+
+          <div class="px-6 pb-8 pt-8 sm:px-10">
+            <!-- Botón cerrar -->
+            <button
+              @click="actualizarVisualizar(false)"
+              class="absolute right-4 top-4 rounded-full border border-white/10 bg-white/5 p-1.5 text-slate-400 transition-colors hover:border-accent-violet/50 hover:text-white"
+              :aria-label="$t('correo.cancel')"
             >
-              <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                <img
-                  class="mx-auto h-10 w-auto"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                  alt="Your Company"
+              <svg
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
                 />
-                <h2
-                  class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900"
+              </svg>
+            </button>
+
+            <div class="text-center">
+              <!-- Icono de sobre -->
+              <div
+                class="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-white/5"
+              >
+                <svg
+                  class="h-7 w-7 text-accent-violet"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
                 >
-                  {{ $t("correo.title") }}
-                </h2>
-                <p class="mx-auto mt-4 max-w-md text-center text-gray-500">
-                  {{ $t("correo.texto") }}
-                </p>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                  />
+                </svg>
               </div>
 
-              <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                <form
-                  class="space-y-6"
-                  method="POST"
-                  @submit.prevent="enviarCorreo"
-                >
-                  <div>
-                    <div class="flex items-center justify-between">
-                      <label
-                        for="name"
-                        class="block text-sm font-medium leading-6 text-gray-900"
-                        >{{ $t("correo.name") }}</label
-                      >
-                    </div>
-                    <div class="mt-2">
-                      <input
-                        v-model="name"
-                        name="name"
-                        type="text"
-                        minlength="4"
-                        autocomplete="name"
-                        required
-                        class="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label
-                      for="email"
-                      class="block text-sm font-medium leading-6 text-gray-900"
-                      >{{ $t("correo.email") }}</label
-                    >
-                    <div class="mt-2">
-                      <input
-                        v-model="email"
-                        name="email"
-                        type="email"
-                        autocomplete="email"
-                        required
-                        class="block w-full rounded-md border-0 py-1.5 pl-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-                  <div class="flex justify-between">
-                    <button
-                      @click="actualizarVisualizar(false)"
-                      class="flex justify-center items-center rounded-md bg-red-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600"
-                    >
-                      {{ $t("correo.cancel") }}
-                    </button>
-
-                    <button
-                      type="submit"
-                      class="flex justify-center items-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
-                    >
-                      {{ $t("correo.send") }}
-                    </button>
-                  </div>
-                </form>
-              </div>
+              <h2
+                id="modal-title"
+                class="mt-6 font-display text-2xl font-bold tracking-tight text-white"
+              >
+                {{ $t("correo.title") }}
+              </h2>
+              <p class="mx-auto mt-3 max-w-md text-sm text-slate-400">
+                {{ $t("correo.texto") }}
+              </p>
             </div>
+
+            <form class="mt-8 space-y-5" @submit.prevent="enviarCorreo">
+              <div>
+                <label
+                  for="name"
+                  class="block text-left text-sm font-medium text-slate-300"
+                >
+                  {{ $t("correo.name") }}
+                </label>
+                <input
+                  v-model="name"
+                  id="name"
+                  name="name"
+                  type="text"
+                  minlength="4"
+                  autocomplete="name"
+                  required
+                  class="mt-2 block w-full rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-white placeholder:text-slate-500 focus:border-accent-violet/60 focus:outline-none focus:ring-2 focus:ring-accent-violet/30 sm:text-sm"
+                />
+              </div>
+
+              <div>
+                <label
+                  for="email"
+                  class="block text-left text-sm font-medium text-slate-300"
+                >
+                  {{ $t("correo.email") }}
+                </label>
+                <input
+                  v-model="email"
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                  class="mt-2 block w-full rounded-xl border border-white/10 bg-white/5 px-4 py-2.5 text-white placeholder:text-slate-500 focus:border-accent-violet/60 focus:outline-none focus:ring-2 focus:ring-accent-violet/30 sm:text-sm"
+                />
+              </div>
+
+              <div class="flex justify-between gap-3 pt-2">
+                <button
+                  type="button"
+                  @click="actualizarVisualizar(false)"
+                  class="rounded-full border border-white/15 bg-white/5 px-6 py-2.5 text-sm font-semibold text-slate-300 transition-colors hover:border-red-400/50 hover:text-white"
+                >
+                  {{ $t("correo.cancel") }}
+                </button>
+
+                <button
+                  type="submit"
+                  :disabled="enviando"
+                  class="rounded-full bg-gradient-to-r from-accent-indigo to-accent-violet px-8 py-2.5 text-sm font-semibold text-white shadow-lg shadow-accent-indigo/30 transition-all duration-300 hover:shadow-accent-violet/50 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  {{ enviando ? "..." : $t("correo.send") }}
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>

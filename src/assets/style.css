@@ -1,3 +1,100 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-base-950 text-slate-300 font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent-violet/40 text-white;
+  }
+
+  /* Scrollbar acorde al tema oscuro */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0f;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a3040;
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6366f1;
+  }
+
+  /* Las secciones no quedan ocultas tras el navbar fijo */
+  section[id],
+  footer[id],
+  div[id="profile"] {
+    scroll-margin-top: 4.5rem;
+  }
+}
+
+@layer utilities {
+  /* Texto con degradado de marca */
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-indigo via-accent-violet to-accent-cyan bg-clip-text text-transparent;
+  }
+
+  /* Tarjeta glassmorphism */
+  .glass-card {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+
+  /* Glow sutil al hover */
+  .hover-glow {
+    @apply transition-all duration-300 hover:border-accent-violet/50 hover:shadow-[0_0_30px_-5px_rgba(139,92,246,0.4)];
+  }
+}
+
+/* Animaciones de entrada al hacer scroll (IntersectionObserver) */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Retrasos escalonados */
+.reveal-delay-1 {
+  transition-delay: 0.1s;
+}
+.reveal-delay-2 {
+  transition-delay: 0.2s;
+}
+.reveal-delay-3 {
+  transition-delay: 0.3s;
+}
+.reveal-delay-4 {
+  transition-delay: 0.4s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
