@@ -2,18 +2,14 @@
 import aprueba from "../assets/img/principal/aprueba.webp";
 import llamarada from "../assets/img/principal/llamarada.webp";
 import inventas from "../assets/img/principal/inventas.webp";
-import portafolio from "../assets/img/principal/oldportafolio.webp";
 import dna from "../assets/img/principal/DNA.webp";
-import peliculas from "../assets/img/principal/peliculas.webp";
 import aythen from "../assets/img/principal/Aythen.webp";
 import dermocapilar from "../assets/img/principal/dermocapilar.webp";
 
 import fullAprueba from "../assets/img/fullscreen/aprueba.webp";
 import fullLlamarada from "../assets/img/fullscreen/llamarada.webp";
 import fullInventas from "../assets/img/fullscreen/inventas.webp";
-import fullPortafolio from "../assets/img/fullscreen/portafolio.webp";
 import fullDna from "../assets/img/fullscreen/DNA.webp";
-import fullPeliculas from "../assets/img/fullscreen/peliculas.webp";
 import fullAythen from "../assets/img/fullscreen/Aythen.webp";
 import fullDermocapilar from "../assets/img/fullscreen/dermocapilar.webp";
 
@@ -23,14 +19,11 @@ import astro from "../assets/img/tecnologias/astro.svg";
 import node from "../assets/img/tecnologias/node.svg";
 import firebase from "../assets/img/tecnologias/firebase.svg";
 import tailwind from "../assets/img/tecnologias/tailwind.svg";
-import css from "../assets/img/tecnologias/css.svg";
 import redux from "../assets/img/tecnologias/redux.svg";
 import axios from "../assets/img/tecnologias/axios.svg";
 import aws from "../assets/img/tecnologias/aws.svg";
 import angular from "../assets/img/tecnologias/angular.svg";
-import html from "../assets/img/tecnologias/html.svg";
 import pinia from "../assets/img/tecnologias/pinia.svg";
-import javascript from "../assets/img/tecnologias/javascript.svg";
 import bootstrap from "../assets/img/tecnologias/bootstrap.svg";
 import zustand from "../assets/img/tecnologias/zustand.svg";
 
@@ -107,28 +100,4 @@ export const proyectosEs = [
     },
     enlace: "https://aythen.com",
   },
-  {
-    nombre: "Anterior portafolio",
-    descripcion:
-      "antiguo portafolio de presentación de mis proyectos y habilidades",
-    imagen: portafolio,
-    proyecto: fullPortafolio,
-    tecnologias: {
-      tecnologia: [html, css, javascript],
-      nombreTecno: ["Html", "Css", "JavaScript"],
-    },
-    enlace: "https://cristhian.netlify.app",
-  },
-  {
-    nombre: "Api peliculas",
-    descripcion:
-      "Consumo de API para la creación de una página que muestra las últimas películas con su nombre y portada. Además, incluye paginación para navegar hasta películas más antiguas.",
-    imagen: peliculas,
-    proyecto: fullPeliculas,
-    tecnologias: {
-      tecnologia: [vue, css, axios],
-      nombreTecno: ["Vuejs", "Css", "Axios"],
-    },
-    enlace: "https://double-v-partners-prueba-tecnica.netlify.app",
-  }
 ];

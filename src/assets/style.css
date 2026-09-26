@@ -32,8 +32,7 @@
 
   /* Las secciones no quedan ocultas tras el navbar fijo */
   section[id],
-  footer[id],
-  div[id="profile"] {
+  footer[id] {
     scroll-margin-top: 4.5rem;
   }
 }

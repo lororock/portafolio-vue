@@ -13,12 +13,10 @@ const modules = ref([EffectCards, Navigation, Pagination]);
 const emit = defineEmits(["abrirContacto"]);
 
 const datos = [
-  { titulo: "profile.area", texto: "profile.areaText" },
-  { titulo: "profile.experience", texto: "profile.experienceText" },
-  { titulo: "profile.Technologies", texto: "profile.TechnologiesText" },
-  { titulo: "profile.methodologies", texto: "profile.methodologiesText" },
-  { titulo: "profile.projects", texto: "profile.projectsText" },
   { titulo: "profile.education", texto: "profile.educationText" },
+  { titulo: "profile.technicalSkills", texto: "profile.technicalSkillsText" },
+  { titulo: "profile.tools", texto: "profile.toolsText" },
+  { titulo: "profile.languages", texto: "profile.languagesText" },
 ];
 
 const irAProyectos = () => {

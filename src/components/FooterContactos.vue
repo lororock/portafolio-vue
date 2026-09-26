@@ -46,7 +46,13 @@ const servicios = [
   "footer.seo",
 ];
 
-const companias = ["Inventas", "Digiworld", "Aythen"];
+const companias = [
+  "Group Global Edtech",
+  "Llamarada",
+  "Inventas-app",
+  "Aythen",
+  "DigiWorld",
+];
 </script>
 
 <template>
