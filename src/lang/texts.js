@@ -37,7 +37,7 @@ export const texts = {
     cv: {
       title: "Hoja de vida",
       text: "Descarga el documento completo con el detalle de mi experiencia, habilidades e idiomas.",
-      link: "https://drive.google.com/file/d/13zbG6liz8LJTSyjn3gvCKNrU8QR69rKY/view?usp=sharing",
+      link: "https://drive.google.com/file/d/143oHvKCr67eKr7BG3toGXVYjsA4t773V/view?usp=sharing",
       download: "Descargar CV (PDF)",
       skillsTitle: "Resumen de competencias",
       frontendLabel: "Frontend",
@@ -107,7 +107,7 @@ export const texts = {
     cv: {
       title: "Resume",
       text: "Download the full document with detailed experience, skills, and languages.",
-      link: "https://drive.google.com/file/d/1CzqPTpW6gvjXQH_UcAoLloyRBZz98hPq/view?usp=sharing",
+      link: "https://drive.google.com/file/d/143oHvKCr67eKr7BG3toGXVYjsA4t773V/view?usp=sharing",
       download: "Download resume (PDF)",
       skillsTitle: "Skills summary",
       frontendLabel: "Frontend",
